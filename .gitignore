@@ -1,0 +1,23 @@
+# Arquivos auxiliares e temporários do LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.bcf
+*.blg
+*.run.xml
+*.idx
+*.ind
+*.ilg
+*.sbl
+*.sig
+
+# Arquivos de editores e sistema
+.vscode/
+.DS_Store
