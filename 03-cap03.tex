@@ -36,11 +36,11 @@ Jovens, idosos e urbanização & IBGE, Censos de 2010 e 2022 & SIDRA, tabelas 20
 
 \subsection{Despesas e a classificação funcional}
 
-As despesas vêm da Declaração de Contas Anuais (DCA), que os municípios enviam ao Sistema de Informações Contábeis e Fiscais do Setor Público Brasileiro (Siconfi), no estágio de despesas pagas. Elas estão organizadas pela classificação funcional da despesa, instituída pela \textcite{portaria42_1999} e obrigatória para União, estados e municípios.
+As despesas vêm da Declaração de Contas Anuais (DCA), que os municípios enviam ao Sistema de Informações Contábeis e Fiscais do Setor Público Brasileiro (Siconfi), no estágio de despesas pagas. Elas estão organizadas pela classificação funcional da despesa, instituída pela Portaria nº 42, de 14 de abril de 1999, do Ministério do Orçamento e Gestão \parencite{portaria42_1999} e obrigatória para União, estados e municípios.
 
 A classificação funcional tem dois níveis. A \emph{função} é ``o maior nível de agregação das diversas áreas de atuação do setor público'' e ``reflete a competência institucional do órgão'', enquanto a \emph{subfunção} ``deve evidenciar a natureza da atuação governamental'' \parencite{mto2023}. Em outras palavras, a função indica a principal área de atuação do órgão que executa o gasto e deve refletir a sua missão institucional, e a subfunção indica a área em que a ação é de fato executada. As duas podem ser combinadas livremente, o que o Manual Técnico de Orçamento chama de matricialidade \parencite{mto2023}.
 
-Essa regra responde a uma dúvida comum. Uma enfermaria mantida pela Secretaria de Educação dentro de uma escola é registrada, em regra, na função Educação, por ser a área de atuação do órgão, com uma subfunção de saúde, como Atenção Básica. Como este trabalho usa o nível de função, esse gasto conta como Educação. A classificação funcional não se confunde com os conceitos legais usados para verificar os mínimos constitucionais: a \textcite{ldb1996}, em seu art.~71, exclui da manutenção e desenvolvimento do ensino os ``programas suplementares de alimentação, assistência médico-odontológica, farmacêutica e psicológica'', e a \textcite{lc141_2012} define o que são ações e serviços públicos de saúde. As variáveis deste trabalho seguem a classificação funcional informada pelo município, e não esses conceitos.
+Essa regra responde a uma dúvida comum. Uma enfermaria mantida pela Secretaria de Educação dentro de uma escola é registrada, em regra, na função Educação, por ser a área de atuação do órgão, com uma subfunção de saúde, como Atenção Básica. Como este trabalho usa o nível de função, esse gasto conta como Educação. A classificação funcional não se confunde com os conceitos legais usados para verificar os mínimos constitucionais: a Lei de Diretrizes e Bases da Educação (Lei nº 9.394/1996), em seu art.~71, exclui da manutenção e desenvolvimento do ensino os ``programas suplementares de alimentação, assistência médico-odontológica, farmacêutica e psicológica'' \parencite{ldb1996}, e a Lei Complementar nº 141/2012 \parencite{lc141_2012} define o que são ações e serviços públicos de saúde. As variáveis deste trabalho seguem a classificação funcional informada pelo município, e não esses conceitos.
 
 Dois cuidados foram tomados com os dados. Primeiro, foram excluídas as despesas intraorçamentárias, que são transações entre órgãos e entidades do próprio município e, se mantidas, contariam o mesmo recurso duas vezes. Segundo, foram usadas apenas as contas de função, porque o mesmo valor aparece repetido no total, na função e na subfunção. A despesa total foi calculada como a soma das 28 funções, para ter a mesma definição em todos os anos: em 2013 a linha de total da base não tem código.
 
@@ -85,7 +85,7 @@ Agricultura & Agricultura & 3.20.000 \\
 Comunicações & Comunicações & 3.24.000 \\ \hline
 \end{tabular}
 \fonte{Elaboração própria, com base em \textcite{sakurai2009}.}
-\nota{Despesas pagas per capita, em R\$ de 2025. \texttt{id\_conta\_bd} é o código da conta na Base dos Dados; os dois dígitos do meio correspondem ao código da função na \textcite{portaria42_1999}.}
+\nota{Despesas pagas per capita, em R\$ de 2025. \texttt{id\_conta\_bd} é o código da conta na Base dos Dados; os dois dígitos do meio correspondem ao código da função na Portaria nº 42/1999 \parencite{portaria42_1999}.}
 \end{table}
 
 As variáveis explicativas estão no \autoref{qua:explicativas}. As de interesse são as dummies de calendário eleitoral e as de alinhamento político; as demais são controles.
@@ -150,7 +150,7 @@ As variáveis políticas são dummies, e para elas média, desvio-padrão, míni
 % A tabela abaixo é gerada a partir da base de regressão (ver prompt).
 \input{tabelas/proporcoes_politicas}
 
-A proporção de prefeitos na coalizão do presidente muda conforme o governo federal de cada período, enquanto a de prefeitos alinhados ao governador varia menos. Essa diferença motiva o uso de efeito fixo de ano no modelo das coalizões (\autoref{sec:especificacao}).
+A proporção de prefeitos na coalizão do presidente muda de forma brusca com cada governo federal: fica entre 52\% e 60\% de 2013 a 2018, cai para menos de 2\% de 2019 a 2022 e fica em torno de 14\% de 2023 a 2025. A proporção alinhada ao governador oscila menos, entre 35\% e 60\%. Como a variável presidencial acompanha o período, comparar anos diferentes misturaria o alinhamento com tudo o mais que mudou entre os governos; por isso o modelo das coalizões usa efeito fixo de ano (\autoref{sec:especificacao}).
 
 A \autoref{tab:desc_dependentes} resume as variáveis dependentes.
 
