@@ -28,37 +28,39 @@
 \ifthenelse{\equal{\terTermoAprovacao}{Sim}}{
 \insereAprovacao}{}
 
+% Dedicatória, agradecimentos e epígrafe: desativados no rascunho
+% (os textos continuam no 00-dados.tex; para voltar, tirar os %)
 % Dedicatória
 % ----------------------------------------------------------
-\ifthenelse{\equal{\terDedicatoria}{Sim}}{
-\begin{dedicatoria}
-   \vspace*{\fill}
-   \centering
-   \noindent
-   \DedicatoriaTexto
-   \vspace*{\fill}
-\end{dedicatoria}
-}{}
+%\ifthenelse{\equal{\terDedicatoria}{Sim}}{
+%\begin{dedicatoria}
+%   \vspace*{\fill}
+%   \centering
+%   \noindent
+%   \DedicatoriaTexto
+%   \vspace*{\fill}
+%\end{dedicatoria}
+%}{}
 
 % Agradecimentos
 % ----------------------------------------------------------
 
- \ifthenelse{\equal{\terAgradecimentos}{Sim}}
- {\begin{agradecimentos}
-    \AgradecimentosTexto
-  \end{agradecimentos}
-  }{}
+% \ifthenelse{\equal{\terAgradecimentos}{Sim}}
+% {\begin{agradecimentos}
+%    \AgradecimentosTexto
+%  \end{agradecimentos}
+%  }{}
 % Epígrafe
 % ----------------------------------------------------------
 
-\ifthenelse{\equal{\terEpigrafe}{Sim}}{
-\begin{epigrafe}
-    \vspace*{\fill}
-	\begin{flushright}
-        \EpigrafeTexto
-	\end{flushright}
-\end{epigrafe}
-}{}
+%\ifthenelse{\equal{\terEpigrafe}{Sim}}{
+%\begin{epigrafe}
+%    \vspace*{\fill}
+%	\begin{flushright}
+%        \EpigrafeTexto
+%	\end{flushright}
+%\end{epigrafe}
+%}{}
 
 % RESUMOS
 % ----------------------------------------------------------
@@ -139,12 +141,14 @@
 % inserir lista de símbolos
 % ----------------------------------------------------------
 
- \ifthenelse{\equal{\terSiglasAbrev}{Sim}}{
-    \imprimirlistadesiglas
-    \cleardoublepage
-    \imprimirlistadesimbolos
-    \cleardoublepage
- }{}
+% Desativadas: nenhuma sigla (\criarsigla) nem símbolo (\criarsimbolo) no texto;
+% as únicas eram de teste, na introdução do modelo. Para voltar, tirar os %.
+% \ifthenelse{\equal{\terSiglasAbrev}{Sim}}{
+%    \imprimirlistadesiglas
+%    \cleardoublepage
+%    \imprimirlistadesimbolos
+%    \cleardoublepage
+% }{}
 
 % inserir o sumario
 % ----------------------------------------------------------

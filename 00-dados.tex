@@ -35,7 +35,7 @@
 % ---
 % Informações de dados para CAPA e FOLHA DE ROSTO
 % ---
-\titulo{O Efeito das Eleições nas Finanças Municipais: Evidências Empíricas para as Regiões Sul e Sudeste do Brasil}
+\titulo{O Efeito das Eleições nas Finanças Municipais: Evidências Empíricas para os municípios brasileiros}
 \autor{Lorenzo Rodrigues Geronazzo}
 \local{Curitiba}
 \data{2026}
@@ -44,7 +44,9 @@
 \tipotrabalho{Monografia}
 % O preambulo deve conter o tipo do trabalho, o objetivo, 
 % o nome da instituição e a área de concentração 
-\preambulo{Monografia apresentada ao curso de Ciências Econômicas da Universidade Federal do Paraná (UFPR), como requisito parcial à obtenção do título de Bacharel em Ciências Econômicas.}
+% Sem ponto final: o modelo acrescenta "." na folha de rosto e ", pela seguinte
+% banca examinadora:" no termo de aprovação.
+\preambulo{Monografia apresentada ao curso de Ciências Econômicas, Setor de Ciências Sociais Aplicadas, da Universidade Federal do Paraná, como requisito parcial à obtenção do título de Bacharel em Ciências Econômicas}
 
 % Marcar Sim para as partes que irão compor o documento pdf
 %----------------------------------------------------------------------------- 
@@ -66,7 +68,7 @@
  \providecommand{\terIndiceR}{Nao}
 %----------------------------------------------------------------------------- 
 
-\titulo{O Efeito das Eleições nas Finanças Municipais: Evidências Empíricas para as Regiões Sul e Sudeste do Brasil}
+\titulo{O Efeito das Eleições nas Finanças Municipais: Evidências Empíricas para os municípios brasileiros}
 \autor{Lorenzo Rodrigues Geronazzo}
 \local{Curitiba}
 \data{2026} %Apenas ano 4 dígitos
@@ -94,28 +96,22 @@
 \instituicao{%
 Universidade Federal do Paraná}
 
-\def \ImprimirSetor{}%
-%Setor de Tecnologia}
+\def \ImprimirSetor{Setor de Ciências Sociais Aplicadas}
 
-\def \ImprimirProgramaPos{}%Programa de Pós Graduação em Engenharia de Construção Civil}
+% Monografia de graduação: sem programa de pós-graduação
+\def \ImprimirProgramaPos{}
 
-\def \ImprimirCurso{}%
-%Curso de Engenharia Civil}
+\def \ImprimirCurso{Curso de Ciências Econômicas}
 
-\preambulo{
-Trabalho apresentado como requisito parcial para a obtenção do título de Mestre em Ciências pelo Programa de Pós Graduação em Engenharia de Construção Civil do  Setor de Tecnologia  da Universidade Federal do Paraná}
-%do grau de Bacharel em Expressão Gráfica no curso de Expressão Gráfica, Setor de Exatas da Universidade Federal do Paraná}
+% (o \preambulo fica no início deste arquivo, junto do \tipotrabalho)
 
-%----------------------------------------------------------------------------- 
+%-----------------------------------------------------------------------------
 
 \newcommand{\imprimirCurso}{Ciências Econômicas}
-%Programa de P\'os Gradua\c{c}\~ao em Engenharia da Constru\c{c}\~ao Civil}
 
-\newcommand{\imprimirDataDefesa}{
-09 de Dezembro de 2018}
+\newcommand{\imprimirDataDefesa}{[a definir]}
 
-\newcommand{\imprimircdu}{
-02:141:005.7}
+\newcommand{\imprimircdu}{[a definir]}
 
 % ----------------------------------------------------------
 \newcommand{\imprimirerrata}{
@@ -157,13 +153,10 @@ Zootecnia, Universidade de São Paulo, São Paulo, 2011.
 % ----------------------------------------------------------
 \newcommand{\AssinaAprovacao}{
 
-\assinatura{%\textbf
-   {Professora} \\ UFPR}
-   \assinatura{%\textbf
-   {Professora} \\ ENSEADE}
-   \assinatura{%\textbf
-   {Professora} \\ TIT}
-   %\assinatura{%\textbf{Professor} \\ Convidado 4}
+% Banca examinadora (o orientador é impresso antes, pelo modelo).
+% \mbox: sem ele, o "[" logo depois do \\ interno do \assinatura vira argumento opcional.
+\assinatura{\mbox{[a definir]}}
+   \assinatura{\mbox{[a definir]}}
       
    \begin{center}
     \vspace*{0.5cm}
@@ -191,19 +184,19 @@ Zootecnia, Universidade de São Paulo, São Paulo, 2011.
 
 % ----------------------------------------------------------
 \newcommand{\ResumoTexto}{%\color{blue}
-Segundo os padrões da ABNT e da norma de trabalho acadêmico, o resumo deve ressaltar o objetivo, o método, os resultados e as conclusões do documento. A ordem e a extensão destes itens dependem do tipo de resumo (informativo ou indicativo) e do tratamento que cada item recebe no documento original. O resumo deve ser precedido da referência do documento, com exceção do resumo inserido no próprio documento. (\ldots) As palavras-chave devem figurar logo abaixo do resumo, antecedidas da expressão Palavras-chave:, separadas entre si por ponto e finalizadas também por ponto.
+[Resumo a ser escrito após a conclusão.]
 }
 
 \newcommand{\PalavraschaveTexto}{%\color{blue}
-latex. abntex. editoração de texto.}
+Ciclos políticos orçamentários. Finanças municipais. Dados em painel. Alinhamento político.}
 
 % ----------------------------------------------------------
 \newcommand{\AbstractTexto}{%\color{blue}
-This is the english abstract.
+[Abstract to be written.]
 }
 % ---
 \newcommand{\KeywordsTexto}{%\color{blue}
-latex. abntex. text editoration.
+[Keywords to be written.]
 }
 
 % ----------------------------------------------------------
