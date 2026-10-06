@@ -1,0 +1,34 @@
+% Gerado por regressao/06_tabelas_latex.R (projeto Modelagem). Não editar à mão.
+\begin{landscape}
+\begin{table}[htbp]
+\caption{Robustez R1 — coalizões sem fusões de partidos}\label{tab:robustez_R1}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr\linewidth-594pt\relax}>{\centering\arraybackslash}p{60pt}>{\centering\arraybackslash}p{60pt}>{\centering\arraybackslash}p{60pt}>{\centering\arraybackslash}p{60pt}>{\centering\arraybackslash}p{60pt}>{\centering\arraybackslash}p{60pt}>{\centering\arraybackslash}p{60pt}>{\centering\arraybackslash}p{60pt}>{\centering\arraybackslash}p{60pt}@{}}
+\hline
+\textbf{Variável} & \textbf{\hspace{0pt}Despesa total} & \textbf{\hspace{0pt}Saúde e Saneamento} & \textbf{\hspace{0pt}Educação e Cultura} & \textbf{\hspace{0pt}Habitação e Urbanismo} & \textbf{\hspace{0pt}Assistência Social} & \textbf{\hspace{0pt}Transporte} & \textbf{\hspace{0pt}Administração} & \textbf{\hspace{0pt}Agricultura} & \textbf{\hspace{0pt}Comunicações} \\ \hline
+\multicolumn{10}{@{}l}{\textit{Modelo A (ciclo eleitoral)}} \\
+Ano eleitoral & 277,672\textsuperscript{***} & 53,040\textsuperscript{***} & 49,240\textsuperscript{*} & 126,713\textsuperscript{***} & 14,082\textsuperscript{***} & 41,689\textsuperscript{***} & 6,805 & 0,483 & $-$0,804\textsuperscript{***} \\
+ & (102,884) & (10,709) & (29,477) & (31,898) & (4,279) & (10,601) & (10,994) & (2,044) & (0,216) \\
+Ano pré-eleitoral & 162,635\textsuperscript{*} & 1,115 & 78,649\textsuperscript{**} & 33,996\textsuperscript{**} & 9,472\textsuperscript{**} & 8,295 & 10,336 & 5,166 & 0,653\textsuperscript{***} \\
+ & (95,095) & (12,213) & (38,560) & (16,501) & (4,676) & (7,719) & (8,429) & (3,641) & (0,148) \\
+\hline
+Observações & 70.669 & 70.526 & 70.550 & 69.574 & 70.485 & 54.423 & 70.553 & 64.464 & 12.360 \\
+Municípios & 5.568 & 5.568 & 5.568 & 5.564 & 5.568 & 5.205 & 5.568 & 5.436 & 1.896 \\
+R\textsuperscript{2} & 0,836 & 0,753 & 0,708 & 0,299 & 0,371 & 0,191 & 0,276 & 0,177 & 0,031 \\[6pt]
+\multicolumn{10}{@{}l}{\textit{Modelo B (coalizões)}} \\
+Coalizão governador & 28,511\textsuperscript{***} & 3,295 & 1,328 & 3,502 & 0,781 & 1,753 & 6,405\textsuperscript{**} & $-$0,450 & $-$0,149 \\
+(sem fusões) & (6,148) & (2,328) & (3,042) & (2,754) & (0,720) & (2,637) & (2,736) & (1,043) & (0,303) \\
+Coalizão presidente & $-$9,849 & 8,465\textsuperscript{***} & $-$1,318 & 0,216 & 0,996 & $-$12,465\textsuperscript{***} & 0,287 & $-$4,580\textsuperscript{***} & 0,401 \\
+(sem fusões) & (7,604) & (3,109) & (3,833) & (4,141) & (0,995) & (3,123) & (3,793) & (1,372) & (0,406) \\
+\hline
+Observações & 70.669 & 70.526 & 70.550 & 69.574 & 70.485 & 54.423 & 70.553 & 64.464 & 12.360 \\
+Municípios & 5.568 & 5.568 & 5.568 & 5.564 & 5.568 & 5.205 & 5.568 & 5.436 & 1.896 \\
+R\textsuperscript{2} & 0,551 & 0,351 & 0,316 & 0,107 & 0,143 & 0,094 & 0,137 & 0,075 & 0,023 \\
+\hline
+\end{tabular}
+\fonte{Elaboração própria.}
+\nota{Modelo A: efeito fixo de município, erros-padrão de Driscoll-Kraay. Modelo B: efeitos fixos de município e de ano, erros-padrão agrupados por município. Erros-padrão entre parênteses. \textsuperscript{***}p$<$0,01; \textsuperscript{**}p$<$0,05; \textsuperscript{*}p$<$0,1.}
+\end{table}
+\end{landscape}

@@ -1,0 +1,38 @@
+% Gerado por regressao/06_tabelas_latex.R (projeto Modelagem). Não editar à mão.
+\begin{landscape}
+\begin{table}[htbp]
+\caption{Robustez R6 — inclui prefeito em segundo mandato}\label{tab:robustez_R6}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr\linewidth-594pt\relax}>{\centering\arraybackslash}p{60pt}>{\centering\arraybackslash}p{60pt}>{\centering\arraybackslash}p{60pt}>{\centering\arraybackslash}p{60pt}>{\centering\arraybackslash}p{60pt}>{\centering\arraybackslash}p{60pt}>{\centering\arraybackslash}p{60pt}>{\centering\arraybackslash}p{60pt}>{\centering\arraybackslash}p{60pt}@{}}
+\hline
+\textbf{Variável} & \textbf{\hspace{0pt}Despesa total} & \textbf{\hspace{0pt}Saúde e Saneamento} & \textbf{\hspace{0pt}Educação e Cultura} & \textbf{\hspace{0pt}Habitação e Urbanismo} & \textbf{\hspace{0pt}Assistência Social} & \textbf{\hspace{0pt}Transporte} & \textbf{\hspace{0pt}Administração} & \textbf{\hspace{0pt}Agricultura} & \textbf{\hspace{0pt}Comunicações} \\ \hline
+\multicolumn{10}{@{}l}{\textit{Modelo A (ciclo eleitoral)}} \\
+Ano eleitoral & 277,917\textsuperscript{***} & 53,164\textsuperscript{***} & 49,086\textsuperscript{*} & 126,890\textsuperscript{***} & 14,079\textsuperscript{***} & 41,825\textsuperscript{***} & 6,820 & 0,479 & $-$0,800\textsuperscript{***} \\
+ & (103,856) & (10,727) & (29,534) & (32,463) & (4,295) & (10,798) & (11,063) & (2,021) & (0,211) \\
+Ano pré-eleitoral & 163,833\textsuperscript{*} & 1,240 & 78,609\textsuperscript{**} & 34,642\textsuperscript{**} & 9,486\textsuperscript{**} & 8,578 & 10,432 & 5,145 & 0,663\textsuperscript{***} \\
+ & (95,642) & (12,240) & (38,695) & (16,651) & (4,698) & (7,752) & (8,493) & (3,639) & (0,153) \\
+Prefeito em & 52,470\textsuperscript{*} & 0,980 & 4,977 & 27,615\textsuperscript{***} & 0,947 & 10,617\textsuperscript{***} & 4,365 & $-$1,109 & 0,358 \\
+segundo mandato & (28,003) & (8,297) & (8,361) & (7,732) & (1,461) & (2,731) & (3,445) & (2,033) & (0,356) \\
+\hline
+Observações & 70.669 & 70.526 & 70.550 & 69.574 & 70.485 & 54.423 & 70.553 & 64.464 & 12.360 \\
+Municípios & 5.568 & 5.568 & 5.568 & 5.564 & 5.568 & 5.205 & 5.568 & 5.436 & 1.896 \\
+R\textsuperscript{2} & 0,836 & 0,753 & 0,708 & 0,301 & 0,371 & 0,192 & 0,276 & 0,177 & 0,032 \\[6pt]
+\multicolumn{10}{@{}l}{\textit{Modelo B (coalizões)}} \\
+Prefeito na coalizão & 30,768\textsuperscript{***} & 4,677\textsuperscript{**} & $-$1,288 & 3,914 & 0,679 & 2,319 & 7,098\textsuperscript{***} & $-$0,554 & $-$0,119 \\
+do governador & (6,289) & (2,349) & (3,070) & (2,792) & (0,721) & (2,646) & (2,731) & (1,039) & (0,300) \\
+Prefeito na coalizão & $-$10,078 & 8,441\textsuperscript{***} & $-$1,306 & 0,075 & 0,994 & $-$12,498\textsuperscript{***} & 0,279 & $-$4,576\textsuperscript{***} & 0,390 \\
+do presidente & (7,587) & (3,108) & (3,834) & (4,132) & (0,995) & (3,117) & (3,791) & (1,370) & (0,403) \\
+Prefeito em & 64,446\textsuperscript{***} & 2,186 & 9,951\textsuperscript{***} & 29,013\textsuperscript{***} & 1,568\textsuperscript{*} & 11,561\textsuperscript{***} & 5,552\textsuperscript{*} & $-$0,719 & 0,370 \\
+segundo mandato & (6,299) & (2,406) & (2,867) & (3,550) & (0,812) & (2,814) & (3,140) & (1,148) & (0,485) \\
+\hline
+Observações & 70.669 & 70.526 & 70.550 & 69.574 & 70.485 & 54.423 & 70.553 & 64.464 & 12.360 \\
+Municípios & 5.568 & 5.568 & 5.568 & 5.564 & 5.568 & 5.205 & 5.568 & 5.436 & 1.896 \\
+R\textsuperscript{2} & 0,552 & 0,351 & 0,316 & 0,109 & 0,143 & 0,094 & 0,137 & 0,075 & 0,023 \\
+\hline
+\end{tabular}
+\fonte{Elaboração própria.}
+\nota{Modelo A: efeito fixo de município, erros-padrão de Driscoll-Kraay. Modelo B: efeitos fixos de município e de ano, erros-padrão agrupados por município. Erros-padrão entre parênteses. \textsuperscript{***}p$<$0,01; \textsuperscript{**}p$<$0,05; \textsuperscript{*}p$<$0,1.}
+\end{table}
+\end{landscape}

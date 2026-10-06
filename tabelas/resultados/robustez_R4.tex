@@ -1,0 +1,34 @@
+% Gerado por regressao/06_tabelas_latex.R (projeto Modelagem). Não editar à mão.
+\begin{landscape}
+\begin{table}[htbp]
+\caption{Robustez R4 — participação na despesa total (\%)}\label{tab:robustez_R4}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr\linewidth-528pt\relax}>{\centering\arraybackslash}p{60pt}>{\centering\arraybackslash}p{60pt}>{\centering\arraybackslash}p{60pt}>{\centering\arraybackslash}p{60pt}>{\centering\arraybackslash}p{60pt}>{\centering\arraybackslash}p{60pt}>{\centering\arraybackslash}p{60pt}>{\centering\arraybackslash}p{60pt}@{}}
+\hline
+\textbf{Variável} & \textbf{\hspace{0pt}Saúde e Saneamento} & \textbf{\hspace{0pt}Educação e Cultura} & \textbf{\hspace{0pt}Habitação e Urbanismo} & \textbf{\hspace{0pt}Assistência Social} & \textbf{\hspace{0pt}Transporte} & \textbf{\hspace{0pt}Administração} & \textbf{\hspace{0pt}Agricultura} & \textbf{\hspace{0pt}Comunicações} \\ \hline
+\multicolumn{9}{@{}l}{\textit{Modelo A (ciclo eleitoral)}} \\
+Ano eleitoral & $-$0,264 & $-$0,487\textsuperscript{***} & 1,437\textsuperscript{***} & 0,067\textsuperscript{***} & 0,429\textsuperscript{***} & $-$0,457\textsuperscript{***} & $-$0,024 & $-$0,015\textsuperscript{***} \\
+ & (0,278) & (0,173) & (0,142) & (0,018) & (0,041) & (0,052) & (0,029) & (0,004) \\
+Ano pré-eleitoral & $-$0,757\textsuperscript{***} & 0,737\textsuperscript{***} & 0,210\textsuperscript{**} & 0,051\textsuperscript{**} & $-$0,047 & $-$0,212\textsuperscript{**} & 0,025 & 0,010\textsuperscript{***} \\
+ & (0,246) & (0,242) & (0,099) & (0,024) & (0,041) & (0,090) & (0,023) & (0,002) \\
+\hline
+Observações & 70.526 & 70.550 & 69.574 & 70.485 & 54.423 & 70.553 & 64.464 & 12.360 \\
+Municípios & 5.568 & 5.568 & 5.564 & 5.568 & 5.205 & 5.568 & 5.436 & 1.896 \\
+R\textsuperscript{2} & 0,113 & 0,247 & 0,092 & 0,025 & 0,035 & 0,066 & 0,013 & 0,031 \\[6pt]
+\multicolumn{9}{@{}l}{\textit{Modelo B (coalizões)}} \\
+Prefeito na coalizão & $-$0,097\textsuperscript{***} & $-$0,114\textsuperscript{***} & 0,051 & $-$0,015 & $-$0,003 & $-$0,008 & $-$0,004 & $-$0,005 \\
+do governador & (0,031) & (0,035) & (0,034) & (0,010) & (0,025) & (0,043) & (0,012) & (0,005) \\
+Prefeito na coalizão & 0,052 & 0,029 & $-$0,041 & 0,006 & 0,002 & 0,062 & 0,002 & 0,006 \\
+do presidente & (0,043) & (0,048) & (0,047) & (0,015) & (0,033) & (0,059) & (0,016) & (0,007) \\
+\hline
+Observações & 70.526 & 70.550 & 69.574 & 70.485 & 54.423 & 70.553 & 64.464 & 12.360 \\
+Municípios & 5.568 & 5.568 & 5.564 & 5.568 & 5.205 & 5.568 & 5.436 & 1.896 \\
+R\textsuperscript{2} & 0,008 & 0,012 & 0,010 & 0,002 & 0,007 & 0,002 & 0,002 & 0,003 \\
+\hline
+\end{tabular}
+\fonte{Elaboração própria.}
+\nota{Modelo A: efeito fixo de município, erros-padrão de Driscoll-Kraay. Modelo B: efeitos fixos de município e de ano, erros-padrão agrupados por município. Erros-padrão entre parênteses. \textsuperscript{***}p$<$0,01; \textsuperscript{**}p$<$0,05; \textsuperscript{*}p$<$0,1.}
+\end{table}
+\end{landscape}

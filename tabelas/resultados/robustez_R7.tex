@@ -1,0 +1,36 @@
+% Gerado por regressao/06_tabelas_latex.R (projeto Modelagem). Não editar à mão.
+\begin{landscape}
+\begin{table}[htbp]
+\caption{Robustez R7 — PIB municipal per capita (2013-2023)}\label{tab:robustez_R7}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr\linewidth-594pt\relax}>{\centering\arraybackslash}p{60pt}>{\centering\arraybackslash}p{60pt}>{\centering\arraybackslash}p{60pt}>{\centering\arraybackslash}p{60pt}>{\centering\arraybackslash}p{60pt}>{\centering\arraybackslash}p{60pt}>{\centering\arraybackslash}p{60pt}>{\centering\arraybackslash}p{60pt}>{\centering\arraybackslash}p{60pt}@{}}
+\hline
+\textbf{Variável} & \textbf{\hspace{0pt}Despesa total} & \textbf{\hspace{0pt}Saúde e Saneamento} & \textbf{\hspace{0pt}Educação e Cultura} & \textbf{\hspace{0pt}Habitação e Urbanismo} & \textbf{\hspace{0pt}Assistência Social} & \textbf{\hspace{0pt}Transporte} & \textbf{\hspace{0pt}Administração} & \textbf{\hspace{0pt}Agricultura} & \textbf{\hspace{0pt}Comunicações} \\ \hline
+\multicolumn{10}{@{}l}{\textit{Modelo A (ciclo eleitoral)}} \\
+Ano eleitoral & 129,219\textsuperscript{*} & 2,522 & 74,811\textsuperscript{**} & 46,196\textsuperscript{***} & 5,194 & 18,706\textsuperscript{***} & $-$8,827 & $-$2,545 & $-$0,386\textsuperscript{**} \\
+ & (69,325) & (8,366) & (37,638) & (6,848) & (3,280) & (4,717) & (6,535) & (2,814) & (0,160) \\
+Ano pré-eleitoral & 110,111 & $-$13,322 & 76,893\textsuperscript{*} & 9,680 & 6,802\textsuperscript{*} & 0,897 & 6,434 & 2,653 & 0,738\textsuperscript{***} \\
+ & (83,280) & (9,029) & (43,435) & (10,844) & (3,861) & (5,308) & (7,887) & (3,161) & (0,162) \\
+PIB municipal & 106,767 & 45,853\textsuperscript{***} & 12,881 & 16,473 & $-$3,974 & $-$0,458 & 18,622 & $-$8,096 & 2,667 \\
+per capita (log) & (107,339) & (14,290) & (48,010) & (16,572) & (3,133) & (12,059) & (13,664) & (6,097) & (1,980) \\
+\hline
+Observações & 59.888 & 59.747 & 59.772 & 58.890 & 59.707 & 46.154 & 59.777 & 54.492 & 10.703 \\
+Municípios & 5.567 & 5.567 & 5.567 & 5.561 & 5.567 & 5.176 & 5.567 & 5.424 & 1.832 \\
+R\textsuperscript{2} & 0,778 & 0,691 & 0,597 & 0,280 & 0,293 & 0,168 & 0,208 & 0,157 & 0,036 \\[6pt]
+\multicolumn{10}{@{}l}{\textit{Modelo B (coalizões)}} \\
+Prefeito na coalizão & 24,960\textsuperscript{***} & $-$2,514 & 5,945\textsuperscript{**} & 1,960 & $-$0,186 & 1,570 & 5,481\textsuperscript{**} & $-$0,968 & $-$0,068 \\
+do governador & (5,622) & (2,175) & (2,454) & (2,535) & (0,683) & (2,341) & (2,624) & (0,981) & (0,304) \\
+Prefeito na coalizão & $-$17,346\textsuperscript{**} & 4,949\textsuperscript{*} & $-$10,449\textsuperscript{***} & $-$2,385 & 1,466 & $-$7,042\textsuperscript{***} & 1,239 & $-$3,913\textsuperscript{***} & 0,289 \\
+do presidente & (6,977) & (2,807) & (3,059) & (3,302) & (0,912) & (2,729) & (3,662) & (1,285) & (0,398) \\
+\hline
+Observações & 59.888 & 59.747 & 59.772 & 58.890 & 59.707 & 46.154 & 59.777 & 54.492 & 10.703 \\
+Municípios & 5.567 & 5.567 & 5.567 & 5.561 & 5.567 & 5.176 & 5.567 & 5.424 & 1.832 \\
+R\textsuperscript{2} & 0,504 & 0,316 & 0,263 & 0,105 & 0,115 & 0,081 & 0,113 & 0,064 & 0,025 \\
+\hline
+\end{tabular}
+\fonte{Elaboração própria.}
+\nota{Modelo A: efeito fixo de município, erros-padrão de Driscoll-Kraay. Modelo B: efeitos fixos de município e de ano, erros-padrão agrupados por município. Erros-padrão entre parênteses. \textsuperscript{***}p$<$0,01; \textsuperscript{**}p$<$0,05; \textsuperscript{*}p$<$0,1.}
+\end{table}
+\end{landscape}
