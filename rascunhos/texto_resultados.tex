@@ -1,16 +1,20 @@
 % ==============================================================================
-% Capítulo de Resultados
-% Tabelas geradas por ../Modelagem/regressao/06_tabelas_latex.R e copiadas para
-% tabelas/resultados/ (não editar as tabelas à mão).
+% Texto do capítulo de Resultados (04-cap04.tex)
+% Cada bloco abaixo substitui o "% TEXTO A ESCREVER" da seção indicada.
+% Os \input das tabelas que já estão no 04-cap04.tex continuam onde estão:
+% o texto de cada bloco vem ANTES do \input da tabela da seção, salvo
+% indicação em contrário. Números conferidos com as tabelas geradas pelo
+% 06_tabelas_latex.R em 06/10/2026.
 % ==============================================================================
 
-\chapter{Resultados}\label{cap:resultados}
-
+% ------------------------------------------------------------------------------
+% BLOCO 0 — logo depois de \chapter{Resultados}, antes da primeira seção
+% ------------------------------------------------------------------------------
 Este capítulo apresenta os resultados dos dois modelos descritos na \autoref{sec:especificacao}. Os coeficientes estão em reais de 2025 por habitante. A leitura segue o critério definido na metodologia: um efeito é considerado sólido quando é estatisticamente significativo tanto com o erro-padrão de Driscoll e Kraay quanto com o erro agrupado por município, e quando não depende de uma única eleição.
 
 % ------------------------------------------------------------------------------
-\section{Ciclo eleitoral}\label{sec:res_ciclo}
-
+% BLOCO 1 — seção "Ciclo eleitoral" (antes do \input do modelo A)
+% ------------------------------------------------------------------------------
 A \autoref{tab:regressao_principal_A} mostra os resultados do modelo A. No ano eleitoral, a despesa total per capita é R\$~277,87 maior, mantidos os demais fatores, o equivalente a cerca de 5\% da média da amostra. O aumento não se distribui de forma uniforme entre as áreas. Em termos relativos às médias da \autoref{tab:desc_dependentes}, ele é maior em Habitação e Urbanismo (R\$~126,81, cerca de 27\% da média do grupo) e em Transporte (R\$~41,74, cerca de 16\%), seguidos por Assistência Social (R\$~14,08, cerca de 7\%) e Saúde e Saneamento (R\$~53,16, cerca de 4\%). Em Educação e Cultura o coeficiente é positivo, mas significativo apenas a 10\%; em Administração e Agricultura não há efeito estatisticamente distinto de zero.
 
 Esse padrão é compatível com a hipótese de que o ciclo eleitoral se manifesta sobretudo na composição do gasto, deslocando recursos para itens mais visíveis ao eleitor, como obras urbanas e transporte \parencite{drazen2010}. Também coincide com o padrão de dente de serra observado na \autoref{fig:grupos}, em que Habitação e Urbanismo e Transporte sobem nos anos de eleição e caem no ano seguinte.
@@ -23,11 +27,9 @@ Entre os controles, cada real per capita de receita tributária está associado 
 
 Os resultados confirmam parte dos achados de \textcite{sakurai2009} para 1990--2005: ele também encontrou efeito positivo do ano eleitoral em Saúde e Saneamento, Habitação e Urbanismo, Transporte e Assistência e Previdência. As diferenças estão em Agricultura, em que ele encontrou queda no ano eleitoral e aqui não há efeito; em Comunicações, em que ele encontrou aumento e aqui o sinal é negativo e pouco robusto; e em Educação e Cultura, sem efeito em seu trabalho e com efeito positivo fraco aqui.
 
-\input{tabelas/resultados/regressao_principal_A}
-
 % ------------------------------------------------------------------------------
-\section{Efeito por eleição}\label{sec:res_por_eleicao}
-
+% BLOCO 2 — seção "Efeito por eleição" (antes do \input do R16)
+% ------------------------------------------------------------------------------
 O coeficiente do ano eleitoral no modelo A é uma média das eleições de 2016 e 2024, já que 2020 é absorvido pela dummy de pandemia. A \autoref{tab:robustez_R16} separa as duas eleições, e cada ano pré-eleitoral, e mostra que elas são muito diferentes.
 
 Em 2016, a despesa total não muda de forma significativa, mas há recomposição: aumentam Habitação e Urbanismo (R\$~57,44), Saúde e Saneamento (R\$~24,35) e Transporte (R\$~17,63), e cai Administração (R\$~17,40). Os gastos visíveis crescem enquanto o gasto administrativo, pouco visível, diminui, exatamente o padrão de ciclo de composição descrito por \textcite{drazen2010}. A queda em Administração no ano eleitoral também foi encontrada por \textcite{teixeira2021}.
@@ -36,11 +38,9 @@ Em 2024, ao contrário, quase todos os grupos sobem ao mesmo tempo, inclusive Ad
 
 O teste R7a reforça essa leitura. Quando a amostra termina em 2023 e o efeito eleitoral passa a ser medido só pela eleição de 2016, o coeficiente da despesa total deixa de ser significativo, mas Saúde e Saneamento, Habitação e Urbanismo e Transporte continuam positivos (\autoref{tab:robustez_R7a}, no \autoref{ap:robustez}). Assim, a evidência mais sólida de ciclo eleitoral está na composição do gasto, presente nas duas eleições; o grande efeito sobre a despesa total depende da eleição de 2024.
 
-\input{tabelas/resultados/robustez_R16}
-
 % ------------------------------------------------------------------------------
-\section{Coalizões}\label{sec:res_coalizoes}
-
+% BLOCO 3 — seção "Coalizões" (antes do \input do modelo B)
+% ------------------------------------------------------------------------------
 A \autoref{tab:regressao_principal_B} mostra os resultados do modelo B, que compara prefeitos alinhados e não alinhados dentro do mesmo ano. Prefeitos da coligação do governador gastam R\$~31,56 per capita a mais no total, com efeitos positivos em Administração (R\$~7,17) e em Saúde e Saneamento (R\$~4,70). Esse resultado é compatível com \textcite{ferreira2007}, que mostram que municípios governados por aliados do governador recebem mais transferências voluntárias. Como as transferências correntes já estão entre os controles, o efeito estimado indica um canal adicional, que pode envolver transferências de capital, convênios ou outras formas de apoio estadual não observadas nos dados.
 
 O alinhamento com o presidente não tem efeito sobre a despesa total. Há efeitos em grupos específicos: aumento em Saúde e Saneamento (R\$~8,45) e redução em Transporte (R\$~12,47) e em Agricultura (R\$~4,58).
@@ -49,11 +49,9 @@ A comparação com o modelo A mostra por que o efeito fixo de ano é necessário
 
 \textcite{sakurai2009} encontrou efeitos do alinhamento com o governador em várias funções, com sinais diferentes: positivos em Saúde e Saneamento e em Habitação e Urbanismo, negativos em Educação e Cultura, Agricultura e Assistência e Previdência. Aqui, com efeito fixo de ano, o efeito é positivo e concentrado na despesa total, em Administração e em Saúde e Saneamento.
 
-\input{tabelas/resultados/regressao_principal_B}
-
 % ------------------------------------------------------------------------------
-\section{Robustez}\label{sec:res_robustez}
-
+% BLOCO 4 — seção "Robustez" (antes do \input da tabela-resumo)
+% ------------------------------------------------------------------------------
 A \autoref{tab:robustez_resumo} compara o efeito do ano eleitoral e do pré-eleitoral no modelo principal com três especificações alternativas.
 
 Na especificação de \textcite{sakurai2009} (R5), que não separa a pandemia e usa erro agrupado, os efeitos em Habitação e Urbanismo, Transporte, Assistência Social e Saúde e Saneamento continuam positivos e significativos. A principal diferença está em Educação e Cultura, cujo coeficiente fica negativo (R\$~$-$40,64). O teste R14, que retira apenas a dummy de pandemia, mostra a origem dessa diferença: sem ela, o coeficiente de Educação e Cultura passa a ser próximo de zero e não significativo, porque a queda desse gasto em 2020 é atribuída à eleição. O resultado de Educação depende, portanto, do tratamento dado a 2020, e não deve ser lido como evidência de ciclo eleitoral.
@@ -63,5 +61,3 @@ Com o erro-padrão agrupado por município (R12), os coeficientes são os mesmos
 Os demais testes, no \autoref{ap:robustez}, avaliam a padronização das siglas, as eleições suplementares, a forma funcional, a limpeza da base, o registro irregular de algumas funções e os controles do Censo, e não alteram as conclusões principais.
 
 Em síntese, três resultados são robustos: (i) o aumento de gastos visíveis, como Habitação e Urbanismo, Transporte e Saúde e Saneamento, nos anos eleitorais, presente nas duas eleições analisadas; (ii) o aumento da despesa total associado ao alinhamento com o governador; e (iii) a ausência de efeito do alinhamento com o presidente sobre a despesa total, uma vez controladas as diferenças entre períodos. O aumento da despesa total no ano eleitoral é estatisticamente significativo, mas sua magnitude depende da eleição de 2024 e deve ser interpretada com cautela.
-
-\input{tabelas/resultados/robustez_resumo}
