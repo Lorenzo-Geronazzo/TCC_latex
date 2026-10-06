@@ -87,6 +87,9 @@
 \renewcommand{\figurename}{FIGURA }
 \renewcommand{\figureautorefname}{FIGURA}
 \renewcommand{\tableautorefname}{TABELA}
+% sem estes, o \autoref usa os nomes em espanhol (último idioma carregado com nomes no hyperref)
+\renewcommand{\equationautorefname}{Equação}
+\renewcommand{\appendixautorefname}{APÊNDICE}
 
 \input{00-pretextual}
 
@@ -112,7 +115,7 @@
 % PARTE DOS REFERENCIAIS TEÓRICOS
 % ----------------------------------------------------------
 %\part{Referenciais teóricos}
-%\input{03-cap03}
+\input{03-cap03}
 
 % PARTE DOS RESULTADOS
 % ----------------------------------------------------------
