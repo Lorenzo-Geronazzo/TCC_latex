@@ -1,0 +1,946 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{alesina1987}{article}{}{4}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=64e826b22be55f993a32de8986e58901}{%
+           family={Alesina},
+           familyi={A\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Cambridge}%
+      }
+      \strng{namehash}{64e826b22be55f993a32de8986e58901}
+      \strng{fullhash}{64e826b22be55f993a32de8986e58901}
+      \strng{fullhashraw}{64e826b22be55f993a32de8986e58901}
+      \strng{bibnamehash}{64e826b22be55f993a32de8986e58901}
+      \strng{authorbibnamehash}{64e826b22be55f993a32de8986e58901}
+      \strng{authornamehash}{64e826b22be55f993a32de8986e58901}
+      \strng{authorfullhash}{64e826b22be55f993a32de8986e58901}
+      \strng{authorfullhashraw}{64e826b22be55f993a32de8986e58901}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Quarterly Journal of Economics}
+      \field{month}{8}
+      \field{number}{3}
+      \field{title}{Macroeconomic policy in a two-party system as a repeated game}
+      \field{volume}{102}
+      \field{year}{1987}
+      \field{pages}{651\bibrangedash 678}
+      \range{pages}{28}
+    \endentry
+    \entry{brender2008}{article}{}{1}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=0dd5c29fe2b17c2efa49e33303f575d1}{%
+           family={Brender},
+           familyi={B\bibinitperiod},
+           given={Adi},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=206416b07483507f3e28d41cfcd0d938}{%
+           family={Drazen},
+           familyi={D\bibinitperiod},
+           given={Allan},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Nashville}%
+      }
+      \strng{namehash}{c3e1d48fbddc16cf77257a174106e380}
+      \strng{fullhash}{c3e1d48fbddc16cf77257a174106e380}
+      \strng{fullhashraw}{c3e1d48fbddc16cf77257a174106e380}
+      \strng{bibnamehash}{c3e1d48fbddc16cf77257a174106e380}
+      \strng{authorbibnamehash}{c3e1d48fbddc16cf77257a174106e380}
+      \strng{authornamehash}{c3e1d48fbddc16cf77257a174106e380}
+      \strng{authorfullhash}{c3e1d48fbddc16cf77257a174106e380}
+      \strng{authorfullhashraw}{c3e1d48fbddc16cf77257a174106e380}
+      \field{extraname}{1}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The American Economic Review}
+      \field{month}{12}
+      \field{number}{5}
+      \field{title}{How do budget deficits and economic growth affect reelection prospects? Evidence from a large cross-section of countries}
+      \field{volume}{98}
+      \field{year}{2008}
+      \field{pages}{2203\bibrangedash 2220}
+      \range{pages}{18}
+    \endentry
+    \entry{brender2005}{article}{}{1}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=0dd5c29fe2b17c2efa49e33303f575d1}{%
+           family={Brender},
+           familyi={B\bibinitperiod},
+           given={Adi},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=206416b07483507f3e28d41cfcd0d938}{%
+           family={Drazen},
+           familyi={D\bibinitperiod},
+           given={Allan},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Amsterdam}%
+      }
+      \strng{namehash}{c3e1d48fbddc16cf77257a174106e380}
+      \strng{fullhash}{c3e1d48fbddc16cf77257a174106e380}
+      \strng{fullhashraw}{c3e1d48fbddc16cf77257a174106e380}
+      \strng{bibnamehash}{c3e1d48fbddc16cf77257a174106e380}
+      \strng{authorbibnamehash}{c3e1d48fbddc16cf77257a174106e380}
+      \strng{authornamehash}{c3e1d48fbddc16cf77257a174106e380}
+      \strng{authorfullhash}{c3e1d48fbddc16cf77257a174106e380}
+      \strng{authorfullhashraw}{c3e1d48fbddc16cf77257a174106e380}
+      \field{extraname}{2}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Monetary Economics}
+      \field{month}{10}
+      \field{number}{7}
+      \field{title}{Political budget cycles in new versus established democracies}
+      \field{volume}{52}
+      \field{year}{2005}
+      \field{pages}{1271\bibrangedash 1295}
+      \range{pages}{25}
+    \endentry
+    \entry{drazen2010}{article}{}{3}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=206416b07483507f3e28d41cfcd0d938}{%
+           family={Drazen},
+           familyi={D\bibinitperiod},
+           given={Allan},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=de36477a0fa0b23254d598b41269e834}{%
+           family={Eslava},
+           familyi={E\bibinitperiod},
+           given={Marcela},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Amsterdam}%
+      }
+      \strng{namehash}{77aab92729dedd8d49c2417d0974a91e}
+      \strng{fullhash}{77aab92729dedd8d49c2417d0974a91e}
+      \strng{fullhashraw}{77aab92729dedd8d49c2417d0974a91e}
+      \strng{bibnamehash}{77aab92729dedd8d49c2417d0974a91e}
+      \strng{authorbibnamehash}{77aab92729dedd8d49c2417d0974a91e}
+      \strng{authornamehash}{77aab92729dedd8d49c2417d0974a91e}
+      \strng{authorfullhash}{77aab92729dedd8d49c2417d0974a91e}
+      \strng{authorfullhashraw}{77aab92729dedd8d49c2417d0974a91e}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Development Economics}
+      \field{month}{5}
+      \field{number}{1}
+      \field{title}{Electoral manipulation via voter-friendly spending: Theory and evidence}
+      \field{volume}{92}
+      \field{year}{2010}
+      \field{pages}{39\bibrangedash 52}
+      \range{pages}{14}
+    \endentry
+    \entry{almeida2023}{article}{}{1}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=37f606a5f428b096a437908f8a90eae6}{%
+           family={Fátima\bibnamedelima Almeida},
+           familyi={F\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={Francielly},
+           giveni={F\bibinitperiod},
+           givenun=0,
+           prefix={de},
+           prefixi={d\bibinitperiod},
+           prefixun=0}}%
+        {{un=0,uniquepart=base,hash=a633adcbf3f4b0055d22dfb2633ee97c}{%
+           family={Sakurai},
+           familyi={S\bibinitperiod},
+           given={Sergio\bibnamedelima Naruhiko},
+           giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9396dc7ea838ec5d468d17c1c528f56c}{%
+           family={Borges},
+           familyi={B\bibinitperiod},
+           given={Rodrigo},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Rio de Janeiro}%
+      }
+      \strng{namehash}{5bd881e70d0c49e22cbb22d8e66c3dfb}
+      \strng{fullhash}{d3fcee9779df3ac99d695d12ad5d26e0}
+      \strng{fullhashraw}{d3fcee9779df3ac99d695d12ad5d26e0}
+      \strng{bibnamehash}{5bd881e70d0c49e22cbb22d8e66c3dfb}
+      \strng{authorbibnamehash}{5bd881e70d0c49e22cbb22d8e66c3dfb}
+      \strng{authornamehash}{5bd881e70d0c49e22cbb22d8e66c3dfb}
+      \strng{authorfullhash}{d3fcee9779df3ac99d695d12ad5d26e0}
+      \strng{authorfullhashraw}{d3fcee9779df3ac99d695d12ad5d26e0}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Pesquisa e Planejamento Econômico}
+      \field{month}{abr}
+      \field{number}{1}
+      \field{title}{Incentivos eleitorais e regras fiscais (não tão) rígidas: o efeito da limitação de mandato sobre restos a pagar}
+      \field{volume}{53}
+      \field{year}{2023}
+      \field{pages}{39\bibrangedash 73}
+      \range{pages}{35}
+    \endentry
+    \entry{ferreira2007}{article}{}{1}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=91273b41ec1b67a3bcd702aef4002a4c}{%
+           family={Ferreira},
+           familyi={F\bibinitperiod},
+           given={Ivan\bibnamedelimb F.\bibnamedelimi S.},
+           giveni={I\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=798ceaccbc67ae44267cba711d519d7e}{%
+           family={Bugarin},
+           familyi={B\bibinitperiod},
+           given={Mauricio\bibnamedelima S.},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Rio de Janeiro}%
+      }
+      \strng{namehash}{5bb81521de120e858e9f4f3be9838261}
+      \strng{fullhash}{5bb81521de120e858e9f4f3be9838261}
+      \strng{fullhashraw}{5bb81521de120e858e9f4f3be9838261}
+      \strng{bibnamehash}{5bb81521de120e858e9f4f3be9838261}
+      \strng{authorbibnamehash}{5bb81521de120e858e9f4f3be9838261}
+      \strng{authornamehash}{5bb81521de120e858e9f4f3be9838261}
+      \strng{authorfullhash}{5bb81521de120e858e9f4f3be9838261}
+      \strng{authorfullhashraw}{5bb81521de120e858e9f4f3be9838261}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista Brasileira de Economia}
+      \field{month}{7}
+      \field{number}{3}
+      \field{title}{Transferências voluntárias e ciclo político-orçamentário no federalismo fiscal brasileiro}
+      \field{volume}{61}
+      \field{year}{2007}
+      \field{pages}{271\bibrangedash 300}
+      \range{pages}{30}
+    \endentry
+    \entry{fialho1997}{article}{}{1}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1de5c383ed8ff490a65df189715bfd7e}{%
+           family={Fialho},
+           familyi={F\bibinitperiod},
+           given={Tânia},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Rio de Janeiro}%
+      }
+      \strng{namehash}{1de5c383ed8ff490a65df189715bfd7e}
+      \strng{fullhash}{1de5c383ed8ff490a65df189715bfd7e}
+      \strng{fullhashraw}{1de5c383ed8ff490a65df189715bfd7e}
+      \strng{bibnamehash}{1de5c383ed8ff490a65df189715bfd7e}
+      \strng{authorbibnamehash}{1de5c383ed8ff490a65df189715bfd7e}
+      \strng{authornamehash}{1de5c383ed8ff490a65df189715bfd7e}
+      \strng{authorfullhash}{1de5c383ed8ff490a65df189715bfd7e}
+      \strng{authorfullhashraw}{1de5c383ed8ff490a65df189715bfd7e}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista Brasileira de Economia}
+      \field{month}{7}
+      \field{number}{3}
+      \field{title}{Testando a evidência de ciclos políticos no Brasil}
+      \field{volume}{51}
+      \field{year}{1997}
+      \field{pages}{379\bibrangedash 389}
+      \range{pages}{11}
+    \endentry
+    \entry{gralak2023}{article}{}{1}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=de92efe0a75e5798539693d374f608e3}{%
+           family={Gralak},
+           familyi={G\bibinitperiod},
+           given={Alvaro\bibnamedelima José},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bc4a855597020878cb205fc07d34e344}{%
+           family={Gerigk},
+           familyi={G\bibinitperiod},
+           given={Willson},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7c66e9b410bc6877dfea04541d947a21}{%
+           family={Ribeiro},
+           familyi={R\bibinitperiod},
+           given={Flávio},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Fortaleza}%
+      }
+      \strng{namehash}{fce344b1b3ec10c3ba5dee7d6e462850}
+      \strng{fullhash}{ccf2bafa4e23bcb8ed8662886a758f50}
+      \strng{fullhashraw}{ccf2bafa4e23bcb8ed8662886a758f50}
+      \strng{bibnamehash}{fce344b1b3ec10c3ba5dee7d6e462850}
+      \strng{authorbibnamehash}{fce344b1b3ec10c3ba5dee7d6e462850}
+      \strng{authornamehash}{fce344b1b3ec10c3ba5dee7d6e462850}
+      \strng{authorfullhash}{ccf2bafa4e23bcb8ed8662886a758f50}
+      \strng{authorfullhashraw}{ccf2bafa4e23bcb8ed8662886a758f50}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista de Economia do Nordeste}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Investimentos públicos e o ciclo político orçamentário nos grandes municípios brasileiros}
+      \field{volume}{54}
+      \field{year}{2023}
+      \field{pages}{31\bibrangedash 48}
+      \range{pages}{18}
+    \endentry
+    \entry{hibbs1977}{article}{}{5}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ebe2ac84c164dc649debed8b557eae04}{%
+           family={{Hibbs Jr.}},
+           familyi={H\bibinitperiod},
+           given={Douglas\bibnamedelima A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Washington}%
+      }
+      \strng{namehash}{ebe2ac84c164dc649debed8b557eae04}
+      \strng{fullhash}{ebe2ac84c164dc649debed8b557eae04}
+      \strng{fullhashraw}{ebe2ac84c164dc649debed8b557eae04}
+      \strng{bibnamehash}{ebe2ac84c164dc649debed8b557eae04}
+      \strng{authorbibnamehash}{ebe2ac84c164dc649debed8b557eae04}
+      \strng{authornamehash}{ebe2ac84c164dc649debed8b557eae04}
+      \strng{authorfullhash}{ebe2ac84c164dc649debed8b557eae04}
+      \strng{authorfullhashraw}{ebe2ac84c164dc649debed8b557eae04}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The American Political Science Review}
+      \field{month}{12}
+      \field{number}{4}
+      \field{title}{Political parties and macroeconomic policy}
+      \field{volume}{71}
+      \field{year}{1977}
+      \field{pages}{1467\bibrangedash 1487}
+      \range{pages}{21}
+    \endentry
+    \entry{nakaguma2010}{article}{}{1}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=121009d860ab36812e555c425c8c5f1b}{%
+           family={Nakaguma},
+           familyi={N\bibinitperiod},
+           given={Marcos\bibnamedelima Yamada},
+           giveni={M\bibinitperiod\bibinitdelim Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0e0688011a842ad76f9ec845d054613a}{%
+           family={Bender},
+           familyi={B\bibinitperiod},
+           given={Siegfried},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Rio de Janeiro}%
+      }
+      \strng{namehash}{b628c8ca2c4137f89b9ab93ee3439a08}
+      \strng{fullhash}{b628c8ca2c4137f89b9ab93ee3439a08}
+      \strng{fullhashraw}{b628c8ca2c4137f89b9ab93ee3439a08}
+      \strng{bibnamehash}{b628c8ca2c4137f89b9ab93ee3439a08}
+      \strng{authorbibnamehash}{b628c8ca2c4137f89b9ab93ee3439a08}
+      \strng{authornamehash}{b628c8ca2c4137f89b9ab93ee3439a08}
+      \strng{authorfullhash}{b628c8ca2c4137f89b9ab93ee3439a08}
+      \strng{authorfullhashraw}{b628c8ca2c4137f89b9ab93ee3439a08}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista Brasileira de Economia}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Ciclos Políticos e Resultados Eleitorais: Um Estudo sobre o Comportamento do Eleitor Brasileiro}
+      \field{volume}{64}
+      \field{year}{2010}
+      \field{pages}{3\bibrangedash 24}
+      \range{pages}{22}
+    \endentry
+    \entry{nordhaus1975}{article}{}{3}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=32c3eb7d6cf2296e0234eb5ecc493827}{%
+           family={Nordhaus},
+           familyi={N\bibinitperiod},
+           given={William\bibnamedelima D.},
+           giveni={W\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Oxford}%
+      }
+      \strng{namehash}{32c3eb7d6cf2296e0234eb5ecc493827}
+      \strng{fullhash}{32c3eb7d6cf2296e0234eb5ecc493827}
+      \strng{fullhashraw}{32c3eb7d6cf2296e0234eb5ecc493827}
+      \strng{bibnamehash}{32c3eb7d6cf2296e0234eb5ecc493827}
+      \strng{authorbibnamehash}{32c3eb7d6cf2296e0234eb5ecc493827}
+      \strng{authornamehash}{32c3eb7d6cf2296e0234eb5ecc493827}
+      \strng{authorfullhash}{32c3eb7d6cf2296e0234eb5ecc493827}
+      \strng{authorfullhashraw}{32c3eb7d6cf2296e0234eb5ecc493827}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Review of Economic Studies}
+      \field{month}{4}
+      \field{number}{2}
+      \field{title}{The political business cycle}
+      \field{volume}{42}
+      \field{year}{1975}
+      \field{pages}{169\bibrangedash 190}
+      \range{pages}{22}
+    \endentry
+    \entry{nunes2017}{article}{}{2}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8adadac26a0476d8fe0949eaf7d3a339}{%
+           family={Nunes},
+           familyi={N\bibinitperiod},
+           given={Guilherme\bibnamedelima Silva},
+           giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Porto Alegre}%
+      }
+      \strng{namehash}{8adadac26a0476d8fe0949eaf7d3a339}
+      \strng{fullhash}{8adadac26a0476d8fe0949eaf7d3a339}
+      \strng{fullhashraw}{8adadac26a0476d8fe0949eaf7d3a339}
+      \strng{bibnamehash}{8adadac26a0476d8fe0949eaf7d3a339}
+      \strng{authorbibnamehash}{8adadac26a0476d8fe0949eaf7d3a339}
+      \strng{authornamehash}{8adadac26a0476d8fe0949eaf7d3a339}
+      \strng{authorfullhash}{8adadac26a0476d8fe0949eaf7d3a339}
+      \strng{authorfullhashraw}{8adadac26a0476d8fe0949eaf7d3a339}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Indicadores Econômicos FEE}
+      \field{number}{4}
+      \field{title}{Ciclos políticos orçamentários: uma análise das despesas em educação e saúde para os municípios do Rio Grande do Sul (2002-12)}
+      \field{volume}{44}
+      \field{year}{2017}
+      \field{pages}{99\bibrangedash 110}
+      \range{pages}{12}
+    \endentry
+    \entry{rogoff1990}{article}{}{6}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=dfacefa9dbd5b7bedeeb1764cc5fd084}{%
+           family={Rogoff},
+           familyi={R\bibinitperiod},
+           given={Kenneth},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Nashville}%
+      }
+      \strng{namehash}{dfacefa9dbd5b7bedeeb1764cc5fd084}
+      \strng{fullhash}{dfacefa9dbd5b7bedeeb1764cc5fd084}
+      \strng{fullhashraw}{dfacefa9dbd5b7bedeeb1764cc5fd084}
+      \strng{bibnamehash}{dfacefa9dbd5b7bedeeb1764cc5fd084}
+      \strng{authorbibnamehash}{dfacefa9dbd5b7bedeeb1764cc5fd084}
+      \strng{authornamehash}{dfacefa9dbd5b7bedeeb1764cc5fd084}
+      \strng{authorfullhash}{dfacefa9dbd5b7bedeeb1764cc5fd084}
+      \strng{authorfullhashraw}{dfacefa9dbd5b7bedeeb1764cc5fd084}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The American Economic Review}
+      \field{month}{3}
+      \field{number}{1}
+      \field{title}{Equilibrium political budget cycles}
+      \field{volume}{80}
+      \field{year}{1990}
+      \field{pages}{21\bibrangedash 36}
+      \range{pages}{16}
+    \endentry
+    \entry{rogoff1988}{article}{}{2}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=dfacefa9dbd5b7bedeeb1764cc5fd084}{%
+           family={Rogoff},
+           familyi={R\bibinitperiod},
+           given={Kenneth},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a265ca7b66e713541d685fcc25ac5418}{%
+           family={Sibert},
+           familyi={S\bibinitperiod},
+           given={Anne},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Oxford}%
+      }
+      \strng{namehash}{c3a7b3c667f1570f88bcdb87ade191fa}
+      \strng{fullhash}{c3a7b3c667f1570f88bcdb87ade191fa}
+      \strng{fullhashraw}{c3a7b3c667f1570f88bcdb87ade191fa}
+      \strng{bibnamehash}{c3a7b3c667f1570f88bcdb87ade191fa}
+      \strng{authorbibnamehash}{c3a7b3c667f1570f88bcdb87ade191fa}
+      \strng{authornamehash}{c3a7b3c667f1570f88bcdb87ade191fa}
+      \strng{authorfullhash}{c3a7b3c667f1570f88bcdb87ade191fa}
+      \strng{authorfullhashraw}{c3a7b3c667f1570f88bcdb87ade191fa}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Review of Economic Studies}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Elections and macroeconomic policy cycles}
+      \field{volume}{55}
+      \field{year}{1988}
+      \field{pages}{1\bibrangedash 16}
+      \range{pages}{16}
+    \endentry
+    \entry{sakurai2009}{article}{}{1}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a633adcbf3f4b0055d22dfb2633ee97c}{%
+           family={Sakurai},
+           familyi={S\bibinitperiod},
+           given={Sergio\bibnamedelima Naruhiko},
+           giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {São Paulo}%
+      }
+      \strng{namehash}{a633adcbf3f4b0055d22dfb2633ee97c}
+      \strng{fullhash}{a633adcbf3f4b0055d22dfb2633ee97c}
+      \strng{fullhashraw}{a633adcbf3f4b0055d22dfb2633ee97c}
+      \strng{bibnamehash}{a633adcbf3f4b0055d22dfb2633ee97c}
+      \strng{authorbibnamehash}{a633adcbf3f4b0055d22dfb2633ee97c}
+      \strng{authornamehash}{a633adcbf3f4b0055d22dfb2633ee97c}
+      \strng{authorfullhash}{a633adcbf3f4b0055d22dfb2633ee97c}
+      \strng{authorfullhashraw}{a633adcbf3f4b0055d22dfb2633ee97c}
+      \field{extraname}{1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Estudos Econômicos}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Ciclos políticos nas funções orçamentárias dos municípios brasileiros: uma análise para o período 1990-2005 via dados em painel}
+      \field{volume}{39}
+      \field{year}{2009}
+      \field{pages}{39\bibrangedash 58}
+      \range{pages}{20}
+    \endentry
+    \entry{sakurai2005}{article}{}{2}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a633adcbf3f4b0055d22dfb2633ee97c}{%
+           family={Sakurai},
+           familyi={S\bibinitperiod},
+           given={Sergio\bibnamedelima Naruhiko},
+           giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {São Paulo}%
+      }
+      \strng{namehash}{a633adcbf3f4b0055d22dfb2633ee97c}
+      \strng{fullhash}{a633adcbf3f4b0055d22dfb2633ee97c}
+      \strng{fullhashraw}{a633adcbf3f4b0055d22dfb2633ee97c}
+      \strng{bibnamehash}{a633adcbf3f4b0055d22dfb2633ee97c}
+      \strng{authorbibnamehash}{a633adcbf3f4b0055d22dfb2633ee97c}
+      \strng{authornamehash}{a633adcbf3f4b0055d22dfb2633ee97c}
+      \strng{authorfullhash}{a633adcbf3f4b0055d22dfb2633ee97c}
+      \strng{authorfullhashraw}{a633adcbf3f4b0055d22dfb2633ee97c}
+      \field{extraname}{2}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Estudos Econômicos}
+      \field{month}{abr./jun}
+      \field{number}{2}
+      \field{title}{Testando a hipótese de ciclos eleitorais racionais nas eleições dos municípios paulistas}
+      \field{volume}{35}
+      \field{year}{2005}
+      \field{pages}{297\bibrangedash 315}
+      \range{pages}{19}
+    \endentry
+    \entry{sakurai2007}{article}{}{2}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=a633adcbf3f4b0055d22dfb2633ee97c}{%
+           family={Sakurai},
+           familyi={S\bibinitperiod},
+           given={Sergio\bibnamedelima Naruhiko},
+           giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0580412b8db3c7b7200094bae0c94671}{%
+           family={Gremaud},
+           familyi={G\bibinitperiod},
+           given={Amaury\bibnamedelima Patrick},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Ribeirão Preto}%
+      }
+      \strng{namehash}{45257159eb07c9199aafb805c94905a1}
+      \strng{fullhash}{45257159eb07c9199aafb805c94905a1}
+      \strng{fullhashraw}{45257159eb07c9199aafb805c94905a1}
+      \strng{bibnamehash}{45257159eb07c9199aafb805c94905a1}
+      \strng{authorbibnamehash}{45257159eb07c9199aafb805c94905a1}
+      \strng{authornamehash}{45257159eb07c9199aafb805c94905a1}
+      \strng{authorfullhash}{45257159eb07c9199aafb805c94905a1}
+      \strng{authorfullhashraw}{45257159eb07c9199aafb805c94905a1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Economia Aplicada}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Political business cycles: evidências empíricas para os municípios paulistas (1989-2001)}
+      \field{volume}{11}
+      \field{year}{2007}
+      \field{pages}{27\bibrangedash 54}
+      \range{pages}{28}
+    \endentry
+    \entry{sakurai2008}{article}{}{1}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=a633adcbf3f4b0055d22dfb2633ee97c}{%
+           family={Sakurai},
+           familyi={S\bibinitperiod},
+           given={Sergio\bibnamedelima Naruhiko},
+           giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c7adc5800913a84b8b1cf1f0a50c5425}{%
+           family={Menezes-Filho},
+           familyi={M\bibinithyphendelim F\bibinitperiod},
+           given={Naercio\bibnamedelima Aquino},
+           giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Dordrecht}%
+      }
+      \strng{namehash}{1cf917549e82d8b13aee398637fc84cc}
+      \strng{fullhash}{1cf917549e82d8b13aee398637fc84cc}
+      \strng{fullhashraw}{1cf917549e82d8b13aee398637fc84cc}
+      \strng{bibnamehash}{1cf917549e82d8b13aee398637fc84cc}
+      \strng{authorbibnamehash}{1cf917549e82d8b13aee398637fc84cc}
+      \strng{authornamehash}{1cf917549e82d8b13aee398637fc84cc}
+      \strng{authorfullhash}{1cf917549e82d8b13aee398637fc84cc}
+      \strng{authorfullhashraw}{1cf917549e82d8b13aee398637fc84cc}
+      \field{extraname}{1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Public Choice}
+      \field{month}{10}
+      \field{number}{1-2}
+      \field{title}{Fiscal policy and reelection in Brazilian municipalities}
+      \field{volume}{137}
+      \field{year}{2008}
+      \field{pages}{301\bibrangedash 314}
+      \range{pages}{14}
+    \endentry
+    \entry{sakurai2011}{article}{}{2}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=a633adcbf3f4b0055d22dfb2633ee97c}{%
+           family={Sakurai},
+           familyi={S\bibinitperiod},
+           given={Sergio\bibnamedelima Naruhiko},
+           giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c7adc5800913a84b8b1cf1f0a50c5425}{%
+           family={Menezes-Filho},
+           familyi={M\bibinithyphendelim F\bibinitperiod},
+           given={Naercio\bibnamedelima Aquino},
+           giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Dordrecht}%
+      }
+      \strng{namehash}{1cf917549e82d8b13aee398637fc84cc}
+      \strng{fullhash}{1cf917549e82d8b13aee398637fc84cc}
+      \strng{fullhashraw}{1cf917549e82d8b13aee398637fc84cc}
+      \strng{bibnamehash}{1cf917549e82d8b13aee398637fc84cc}
+      \strng{authorbibnamehash}{1cf917549e82d8b13aee398637fc84cc}
+      \strng{authornamehash}{1cf917549e82d8b13aee398637fc84cc}
+      \strng{authorfullhash}{1cf917549e82d8b13aee398637fc84cc}
+      \strng{authorfullhashraw}{1cf917549e82d8b13aee398637fc84cc}
+      \field{extraname}{2}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Public Choice}
+      \field{month}{7}
+      \field{number}{1-2}
+      \field{title}{Opportunistic and partisan election cycles in Brazil: new evidence at the municipal level}
+      \field{volume}{148}
+      \field{year}{2011}
+      \field{pages}{233\bibrangedash 247}
+      \range{pages}{15}
+    \endentry
+    \entry{shi2006}{article}{}{1}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=026991feaf0116f0234e46d2ed01ca14}{%
+           family={Shi},
+           familyi={S\bibinitperiod},
+           given={Min},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e85a39d30f7e8c82ed2c161d3ef53ea9}{%
+           family={Svensson},
+           familyi={S\bibinitperiod},
+           given={Jakob},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Amsterdam}%
+      }
+      \strng{namehash}{93c329de31b9c41217213b3617f284be}
+      \strng{fullhash}{93c329de31b9c41217213b3617f284be}
+      \strng{fullhashraw}{93c329de31b9c41217213b3617f284be}
+      \strng{bibnamehash}{93c329de31b9c41217213b3617f284be}
+      \strng{authorbibnamehash}{93c329de31b9c41217213b3617f284be}
+      \strng{authornamehash}{93c329de31b9c41217213b3617f284be}
+      \strng{authorfullhash}{93c329de31b9c41217213b3617f284be}
+      \strng{authorfullhashraw}{93c329de31b9c41217213b3617f284be}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Public Economics}
+      \field{month}{9}
+      \field{number}{8-9}
+      \field{title}{Political budget cycles: do they differ across countries and why?}
+      \field{volume}{90}
+      \field{year}{2006}
+      \field{pages}{1367\bibrangedash 1389}
+      \range{pages}{23}
+    \endentry
+    \entry{teixeira2021}{article}{}{2}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=5a463c437bfdaa7fa7fe1a0b46e1e7c2}{%
+           family={Teixeira},
+           familyi={T\bibinitperiod},
+           given={Caroline\bibnamedelima Reis},
+           giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1c85b0b39b1d069773b3deb68e730d0f}{%
+           family={Mattos},
+           familyi={M\bibinitperiod},
+           given={Enlinson},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Ribeirão Preto}%
+      }
+      \strng{namehash}{1a63234fe08a1d83d50dc3a96fb78bb1}
+      \strng{fullhash}{1a63234fe08a1d83d50dc3a96fb78bb1}
+      \strng{fullhashraw}{1a63234fe08a1d83d50dc3a96fb78bb1}
+      \strng{bibnamehash}{1a63234fe08a1d83d50dc3a96fb78bb1}
+      \strng{authorbibnamehash}{1a63234fe08a1d83d50dc3a96fb78bb1}
+      \strng{authornamehash}{1a63234fe08a1d83d50dc3a96fb78bb1}
+      \strng{authorfullhash}{1a63234fe08a1d83d50dc3a96fb78bb1}
+      \strng{authorfullhashraw}{1a63234fe08a1d83d50dc3a96fb78bb1}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Economia Aplicada}
+      \field{number}{4}
+      \field{title}{Competição política e a resposta fiscal para municípios do Brasil}
+      \field{volume}{25}
+      \field{year}{2021}
+      \field{pages}{545\bibrangedash 580}
+      \range{pages}{36}
+    \endentry
+    \entry{vicente2012}{article}{}{1}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=a12bb8b3efc1a524f338980c698e5779}{%
+           family={Vicente},
+           familyi={V\bibinitperiod},
+           given={Ernesto\bibnamedelimb Fernando\bibnamedelima Rodrigues},
+           giveni={E\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=11dcc2e3018077bcbaa503fac063b2bf}{%
+           family={Nascimento},
+           familyi={N\bibinitperiod},
+           given={Leonardo\bibnamedelima Silveira},
+           giveni={L\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0,
+           prefix={do},
+           prefixi={d\bibinitperiod},
+           prefixun=0}}%
+      }
+      \list{location}{1}{%
+        {Ribeirão Preto}%
+      }
+      \strng{namehash}{c561769f945a7af913029bbe43e065ca}
+      \strng{fullhash}{c561769f945a7af913029bbe43e065ca}
+      \strng{fullhashraw}{c561769f945a7af913029bbe43e065ca}
+      \strng{bibnamehash}{c561769f945a7af913029bbe43e065ca}
+      \strng{authorbibnamehash}{c561769f945a7af913029bbe43e065ca}
+      \strng{authornamehash}{c561769f945a7af913029bbe43e065ca}
+      \strng{authorfullhash}{c561769f945a7af913029bbe43e065ca}
+      \strng{authorfullhashraw}{c561769f945a7af913029bbe43e065ca}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista de Contabilidade e Organizações}
+      \field{month}{1}
+      \field{number}{14}
+      \field{title}{A efetividade dos ciclos políticos nos municípios brasileiros: um enfoque contábil}
+      \field{volume}{6}
+      \field{year}{2012}
+      \field{pages}{106\bibrangedash 126}
+      \range{pages}{21}
+    \endentry
+    \entry{videira2011}{article}{}{1}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=4cfe60bad5cc17c7d912af3e78aacfdf}{%
+           family={Videira},
+           familyi={V\bibinitperiod},
+           given={Raphael\bibnamedelima Almeida},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1c85b0b39b1d069773b3deb68e730d0f}{%
+           family={Mattos},
+           familyi={M\bibinitperiod},
+           given={Enlinson},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Ribeirão Preto}%
+      }
+      \strng{namehash}{cd16ec322342abc0b29d15bf9a9c4ea0}
+      \strng{fullhash}{cd16ec322342abc0b29d15bf9a9c4ea0}
+      \strng{fullhashraw}{cd16ec322342abc0b29d15bf9a9c4ea0}
+      \strng{bibnamehash}{cd16ec322342abc0b29d15bf9a9c4ea0}
+      \strng{authorbibnamehash}{cd16ec322342abc0b29d15bf9a9c4ea0}
+      \strng{authornamehash}{cd16ec322342abc0b29d15bf9a9c4ea0}
+      \strng{authorfullhash}{cd16ec322342abc0b29d15bf9a9c4ea0}
+      \strng{authorfullhashraw}{cd16ec322342abc0b29d15bf9a9c4ea0}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Economia Aplicada}
+      \field{month}{abr./jun}
+      \field{number}{2}
+      \field{title}{Ciclos políticos eleitorais e a interação espacial de políticas fiscais entre os municípios brasileiros}
+      \field{volume}{15}
+      \field{year}{2011}
+      \field{pages}{259\bibrangedash 286}
+      \range{pages}{28}
+    \endentry
+  \enddatalist
+  \missing{ISO5122:1979}
+  \missing{abntex2modelo}
+  \missing{blundell1998}
+  \missing{luminaria01}
+\endrefsection
+\endinput
+
