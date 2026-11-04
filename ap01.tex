@@ -7,7 +7,7 @@
 
 \chapter{Testes de robustez}\label{ap:robustez}
 
-O \autoref{qua:robustez} lista todos os testes de robustez estimados. Cada um muda uma decisão em relação aos modelos principais; os testes R5, R10 e R11 mudam mais de um elemento, como indicado. Os quatro testes discutidos no texto principal são R5, R12, R14 e R16. As tabelas de resultados vêm a seguir, na ordem do quadro; a do R16 está no capítulo de Resultados (\autoref{tab:robustez_R16}, na \autoref{sec:res_por_eleicao}).
+O \autoref{qua:robustez} lista todos os testes de robustez estimados. Cada um muda uma decisão em relação aos modelos principais, em logaritmo; os testes R5, R7, R10 e R11 mudam mais de um elemento, como indicado. Os cinco testes discutidos no texto principal são R3, R5, R12, R14 e R16. As tabelas de resultados vêm a seguir, na ordem do quadro; a do R16 está no capítulo de Resultados (\autoref{tab:robustez_R16}, na \autoref{sec:res_por_eleicao}).
 
 \begin{quadro}[htbp]
 \caption{Testes de robustez}\label{qua:robustez}
@@ -18,16 +18,16 @@ O \autoref{qua:robustez} lista todos os testes de robustez estimados. Cada um mu
 \textbf{Teste} & \textbf{O que muda em relação ao modelo principal} & \textbf{O que verifica} \\ \hline
 R1 & Coalizões sem considerar fusões de partidos (só mudanças de nome) & Regra de padronização das siglas \\ \hline
 R2 & Exclui município-anos com prefeito ou governador vindo de eleição suplementar & Casos atípicos de mandato \\ \hline
-R3 & Variável dependente em logaritmo & Forma funcional (efeito em \%) \\ \hline
-R4 & Variável dependente como participação na despesa total (\%) & Recomposição do gasto entre áreas \\ \hline
-R5 & Especificação de \textcite{sakurai2009}: sem pré-eleitoral e sem pandemia, com erro agrupado por município & Comparação com a literatura \\ \hline
+R3 & Especificação em nível (dependente, receitas e PIB) & Forma funcional \\ \hline
+R4 & Variável dependente como participação na despesa total (\%), com os controles em logaritmo & Recomposição do gasto entre áreas \\ \hline
+R5 & Especificação de \textcite{sakurai2009}, em logaritmo: sem pré-eleitoral e sem pandemia, com erro agrupado por município & Comparação com a literatura \\ \hline
 R6 & Inclui dummy de prefeito em segundo mandato & Controle de reeleição \\ \hline
-R7 & PIB municipal no lugar do nacional (amostra 2013--2023) & Controle econômico local \\ \hline
+R7 & Logaritmo do PIB municipal per capita no lugar do PIB nacional (amostra 2013--2023) & Controle econômico local \\ \hline
 R7a & Especificação principal só em 2013--2023 & Separa o efeito da amostra do efeito do PIB no R7 \\ \hline
 R8 & Assistência Social somada à Previdência & Agrupamento original de \textcite{sakurai2009} \\ \hline
 R9 & Transporte, Agricultura e Comunicações só com municípios que informam a função em todos os anos & Registro irregular das funções \\ \hline
-R10 & Sem limpeza: mantém os município-anos atípicos e a receita tributária original & Regra de limpeza \\ \hline
-R11 & Troca a exclusão dos atípicos pela winsorização das dependentes nos percentis 1 e 99 de cada ano & Sensibilidade a valores extremos \\ \hline
+R10 & Sem limpeza: mantém os município-anos atípicos e usa o logaritmo da receita tributária original (os negativos ficam ausentes) & Regras de limpeza \\ \hline
+R11 & Troca a exclusão dos atípicos pela winsorização das dependentes, em reais, nos percentis 1 e 99 de cada ano, antes do logaritmo & Sensibilidade a valores extremos \\ \hline
 R12 & Modelo A com erro agrupado por município & Tipo de erro-padrão \\ \hline
 R13 & Modelo B com erro de \textcite{driscoll1998} & Tipo de erro-padrão \\ \hline
 R14 & Modelo A sem a dummy de pandemia & Efeito da dummy de 2020 \\ \hline
@@ -36,6 +36,8 @@ R16 & Um efeito para cada eleição (2016 e 2024) e para cada ano pré-eleitoral
 \end{tabular}
 \fonte{Elaboração própria.}
 \end{quadro}
+
+O teste R10 (\autoref{tab:robustez_R10}) reestima os modelos sem as duas regras de limpeza: mantém os 66 município-anos atípicos de despesa e usa a receita tributária original, incluindo o Tocantins em 2024. Os 35 valores negativos dessa receita ficam ausentes, porque não têm logaritmo, de modo que o teste não recoloca esses casos. O número de observações aumenta em 151 na despesa total e entre 15 e 142 nos grupos. No modelo A, os coeficientes do ano eleitoral e do ano pré-eleitoral mantêm sinal e nível de significância em todas as variáveis, com variações pequenas de magnitude (na despesa total, o coeficiente do ano eleitoral passa de 0,0519 para 0,0499, isto é, de cerca de 5,3\% para 5,1\%). No modelo B, todos os coeficientes de alinhamento mantêm o sinal; o alinhamento com o governador passa de significativo a 5\% para significativo a 10\% em Educação e Cultura (de 0,0033 para 0,0031) e de significativo a 1\% para significativo a 5\% em Administração (de 0,0070 para 0,0069), e os demais mantêm o nível de significância. As regras de limpeza, portanto, não alteram as conclusões principais. Como o teste muda as duas regras ao mesmo tempo, ele não permite separar o efeito de cada uma, e também não mostra que os valores tratados eram de fato erros de lançamento.
 
 % ------------------------------------------------------------------------------
 % Tabelas de cada teste (o título do teste está na legenda). Geradas por

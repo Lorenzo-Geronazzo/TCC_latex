@@ -52,13 +52,8 @@
 
 % Pacotes de citações BibLaTeX
 % ----------------------------------------------------------
-\usepackage[style=abnt,backref=true,backend=biber,citecounter=true,backrefstyle=three,maxbibnames=2,minbibnames=1,maxcitenames=2,mincitenames=1]{biblatex}
+\usepackage[style=abnt,backref=false,backend=biber,maxbibnames=2,minbibnames=1,maxcitenames=2,mincitenames=1]{biblatex}
 
-
-\DefineBibliographyStrings{brazil}{%
- backrefpage = {Citado \arabic{citecounter} vez na página},% originally "cited on page"
- backrefpages = {Citado \arabic{citecounter} vezes nas páginas},% originally "cited on pages"
-}
 
 % Comando criado para formatar citações em figuras/tabelas (UFPR 2024)
 \newcommand{\citefig}[1]{~\Citeauthor*{#1}\citeyear{#1}}
