@@ -34,33 +34,23 @@ Jovens, idosos e urbanização & IBGE, Censos de 2010 e 2022 & SIDRA, tabelas 20
 \fonte{Elaboração própria.}
 \end{quadro}
 
-\subsection{Despesas e a classificação funcional}
-
-As despesas vêm da Declaração de Contas Anuais (DCA), que os municípios enviam ao Sistema de Informações Contábeis e Fiscais do Setor Público Brasileiro (Siconfi), no estágio de despesas pagas. Elas estão organizadas pela classificação funcional da despesa, instituída pela Portaria nº 42, de 14 de abril de 1999, do Ministério do Orçamento e Gestão \parencite{portaria42_1999} e obrigatória para União, estados e municípios.
+Entre esses dados, as despesas vêm da Declaração de Contas Anuais (DCA), que os municípios enviam ao Sistema de Informações Contábeis e Fiscais do Setor Público Brasileiro (Siconfi), no estágio de despesas pagas. Elas estão organizadas pela classificação funcional da despesa, instituída pela Portaria nº 42, de 14 de abril de 1999, do Ministério do Orçamento e Gestão \parencite{portaria42_1999} e obrigatória para União, estados e municípios.
 
 A classificação funcional tem dois níveis: a \emph{função} indica a principal área de atuação do órgão que executa o gasto e deve refletir a sua missão institucional, e a \emph{subfunção} indica a área em que a ação é de fato executada. As duas podem ser combinadas livremente, o que o Manual Técnico de Orçamento chama de matricialidade \parencite{mto2023}. As variáveis deste trabalho seguem a classificação funcional informada pelo município, no nível de função.
 
-Dois cuidados foram tomados com os dados. Primeiro, foram excluídas as despesas intraorçamentárias, que são operações entre órgãos, fundos e entidades do próprio município e, se mantidas, contariam o mesmo recurso duas vezes, já que a despesa de um corresponde à receita de outro, conforme a Portaria Interministerial STN/SOF nº 338/2006 \parencite{portaria338_2006}. Segundo, foram usadas apenas as contas de função, porque o mesmo valor aparece repetido no total, na função e na subfunção.
+Dois cuidados foram tomados com os dados de despesa. Primeiro, foram excluídas as despesas intraorçamentárias, que são operações entre órgãos, fundos e entidades do próprio município e, se mantidas, contariam o mesmo recurso duas vezes, já que a despesa de um corresponde à receita de outro, conforme a Portaria Interministerial STN/SOF nº 338/2006 \parencite{portaria338_2006}. Segundo, foram usadas apenas as contas de função, porque o mesmo valor aparece repetido no total, na função e na subfunção.
 
 A despesa total foi calculada como a soma das 28 funções. A base traz uma linha de total com código próprio apenas a partir de 2014; em 2013, o total aparece sem código e coincide com a soma das funções em 99,5\% dos municípios. Somar as funções garante a mesma definição em todos os anos e, de 2014 em diante, produz exatamente o total oficial.
 
-\subsection{Receitas}
+As receitas entram como controles. A receita tributária (impostos, taxas e contribuição de melhoria)\footnote{Impostos são tributos cujo fato gerador independe de qualquer atividade estatal específica relativa ao contribuinte, como o IPTU e o ISS; taxas são cobradas pelo exercício do poder de polícia ou pela utilização de serviço público específico e divisível, como a taxa de coleta de lixo; e a contribuição de melhoria é cobrada para custear obras públicas que valorizem imóveis, limitada ao acréscimo de valor de cada imóvel, conforme o Código Tributário Nacional, Lei nº 5.172/1966 \parencite[arts.~16, 77 e 81]{ctn1966}.} e as transferências correntes\footnote{Transferências correntes são recursos recebidos de outras pessoas de direito público ou privado para despesas de manutenção ou funcionamento, sem contraprestação direta em bens ou serviços a quem transferiu \parencite[p.~49]{mcasp2024}. Nos municípios, incluem principalmente as transferências da União e dos estados, como o Fundo de Participação dos Municípios e a cota-parte do ICMS. A conta usada neste trabalho (1.1.7) inclui mais do que União e estados, como transferências de outras instituições públicas, convênios e instituições privadas, o que é uma diferença em relação a \textcite{sakurai2009}.} foram tomadas diretamente da conta agregada, sem somar as contas que a compõem, para evitar dupla contagem. Testes por município-ano confirmaram que cada conta agregada é igual à soma das suas componentes em praticamente todos os casos.
 
-A receita tributária (impostos, taxas e contribuição de melhoria)\footnote{Impostos são tributos cujo fato gerador independe de qualquer atividade estatal específica relativa ao contribuinte, como o IPTU e o ISS; taxas são cobradas pelo exercício do poder de polícia ou pela utilização de serviço público específico e divisível, como a taxa de coleta de lixo; e a contribuição de melhoria é cobrada para custear obras públicas que valorizem imóveis, limitada ao acréscimo de valor de cada imóvel, conforme o Código Tributário Nacional, Lei nº 5.172/1966 \parencite[arts.~16, 77 e 81]{ctn1966}.} e as transferências correntes\footnote{Transferências correntes são recursos recebidos de outras pessoas de direito público ou privado para despesas de manutenção ou funcionamento, sem contraprestação direta em bens ou serviços a quem transferiu \parencite[p.~49]{mcasp2024}. Nos municípios, incluem principalmente as transferências da União e dos estados, como o Fundo de Participação dos Municípios e a cota-parte do ICMS. A conta usada neste trabalho (1.1.7) inclui mais do que União e estados, como transferências de outras instituições públicas, convênios e instituições privadas, o que é uma diferença em relação a \textcite{sakurai2009}.} foram tomadas diretamente da conta agregada, sem somar as contas que a compõem, para evitar dupla contagem. Testes por município-ano confirmaram que cada conta agregada é igual à soma das suas componentes em praticamente todos os casos.
-
-\subsection{Variáveis políticas}
-
-Cada município-ano recebe um único prefeito: o último a assumir até 1º de julho, isto é, quem governou a maior parte do ano quando há uma troca no ano. O prefeito eleito em 2012 responde pelos anos de 2013 a 2016, o eleito em 2016 pelos anos de 2017 a 2020, e assim por diante. Eleições suplementares foram incorporadas pela data em que ocorreram. O alinhamento com o governador e com o presidente compara o partido do prefeito com a coligação vencedora da eleição estadual e da nacional vigentes, depois de padronizar as siglas pelas mudanças de nome e pelas fusões registradas pelo TSE. Mudanças de nome foram sempre consideradas. Fusões entre partidos só foram consideradas quando ocorreram entre a eleição do prefeito e a do governador (ou do presidente); se as duas eleições são anteriores à fusão, os partidos ainda eram distintos e não contam como aliados.
+Das variáveis fiscais passa-se às políticas, que partem da identificação do prefeito. Cada município-ano recebe um único prefeito: o último a assumir até 1º de julho, isto é, quem governou a maior parte do ano quando há uma troca no ano. O prefeito eleito em 2012 responde pelos anos de 2013 a 2016, o eleito em 2016 pelos anos de 2017 a 2020, e assim por diante. Eleições suplementares foram incorporadas pela data em que ocorreram. O alinhamento com o governador e com o presidente compara o partido do prefeito com a coligação vencedora da eleição estadual e da nacional vigentes, depois de padronizar as siglas pelas mudanças de nome e pelas fusões registradas pelo TSE. Mudanças de nome foram sempre consideradas. Fusões entre partidos só foram consideradas quando ocorreram entre a eleição do prefeito e a do governador (ou do presidente); se as duas eleições são anteriores à fusão, os partidos ainda eram distintos e não contam como aliados.
 
 Para governador e presidente, o alinhamento usa sempre a coligação vencedora da eleição ordinária. Nos três casos em que o governador no cargo em 1º de julho veio de cassação seguida de interinidade ou de eleição suplementar (Amazonas em 2017 e 2018 e Tocantins em 2018), a coligação da ordinária foi mantida, e o teste R2 verifica se esses município-anos afetam os resultados.
 
-\subsection{Deflação e valores per capita}
+Os valores em reais passam ainda pela deflação. Todos os valores monetários foram deflacionados pelo Índice Nacional de Preços ao Consumidor Amplo (IPCA) e expressos em reais de 2025. Usou-se a média anual do IPCA, e não o valor de dezembro. Cada pagamento é registrado pelo valor efetivamente pago, na data em que ocorre, de modo que o valor anual do Siconfi soma pagamentos feitos a preços de meses diferentes. Por isso, cada valor foi dividido pelo nível médio de preços do ano: usar o índice de dezembro trataria pagamentos feitos no início do ano como se tivessem ocorrido a preços de fim de ano. Os valores foram então divididos pela população estimada do município. O PIB nacional vem das Contas Nacionais Trimestrais, e os valores de 2024 e 2025 ainda são preliminares.
 
-Todos os valores monetários foram deflacionados pelo Índice Nacional de Preços ao Consumidor Amplo (IPCA) e expressos em reais de 2025. Usou-se a média anual do IPCA, e não o valor de dezembro. Cada pagamento é registrado pelo valor efetivamente pago, na data em que ocorre, de modo que o valor anual do Siconfi soma pagamentos feitos a preços de meses diferentes. Por isso, cada valor foi dividido pelo nível médio de preços do ano: usar o índice de dezembro trataria pagamentos feitos no início do ano como se tivessem ocorrido a preços de fim de ano. Os valores foram então divididos pela população estimada do município.
-
-\subsection{Valores ausentes e atípicos}
-
-A ausência de uma função não foi tratada como gasto zero, porque o município pode ter lançado o gasto em outra função. Nesses casos, o município-ano sai da regressão daquela variável. Foram marcados como atípicos 66 município-anos em que a despesa total per capita ficou abaixo de 20\% ou acima de cinco vezes a mediana do próprio município, variações isoladas que podem indicar erros de lançamento. A receita tributária foi considerada ausente em dois casos: quando negativa e em todos os municípios do Tocantins em 2024. Nesse ano, a mediana da receita tributária per capita do estado cai de R\$~493 para R\$~353 e volta a R\$~501 em 2025, e 31 dos seus municípios registram receita negativa, o que sugere possíveis erros de lançamento concentrados no estado e no ano. Ao todo, 141 município-anos ficaram sem receita tributária, 137 deles do Tocantins em 2024. Como a receita tributária é controle em todas as regressões, esses município-anos saem dos modelos principais. As duas decisões são avaliadas no teste R10 (\autoref{sec:robustez} e \autoref{ap:robustez}), que indica que elas não alteram as conclusões principais: nenhum coeficiente de interesse muda de sinal, os do ciclo eleitoral mantêm o nível de significância, e dois coeficientes do alinhamento com o governador, em Educação e Cultura e em Administração, mudam de nível sem deixar de ser significativos.
+Por fim, a base exigiu decisões sobre valores ausentes e atípicos. A ausência de uma função não foi tratada como gasto zero, porque o município pode ter lançado o gasto em outra função. Nesses casos, o município-ano sai da regressão daquela variável. Foram marcados como atípicos 66 município-anos em que a despesa total per capita ficou abaixo de 20\% ou acima de cinco vezes a mediana do próprio município, variações isoladas que podem indicar erros de lançamento. A receita tributária foi considerada ausente em dois casos: quando negativa e em todos os municípios do Tocantins em 2024. Nesse ano, a mediana da receita tributária per capita do estado cai de R\$~493 para R\$~353 e volta a R\$~501 em 2025, e 31 dos seus municípios registram receita negativa, o que sugere possíveis erros de lançamento concentrados no estado e no ano. Ao todo, 141 município-anos ficaram sem receita tributária, 137 deles do Tocantins em 2024. Como a receita tributária é controle em todas as regressões, esses município-anos saem dos modelos principais. As duas decisões são avaliadas no teste R10 (\autoref{sec:robustez} e \autoref{ap:robustez}), que indica que elas não alteram as conclusões principais: nenhum coeficiente de interesse muda de sinal, os do ciclo eleitoral mantêm o nível de significância, e dois coeficientes do alinhamento com o governador, em Educação e Cultura e em Administração, mudam de nível sem deixar de ser significativos.
 
 Nas nove variáveis dependentes, há 7 município-anos com valor negativo e 4 com valor zero. Como os modelos usam ln(1 + x) (\autoref{sec:especificacao}), os zeros permanecem nas regressões, com valor 0, e os negativos ficam ausentes, porque não têm logaritmo. Cinco dos 7 negativos são do Tocantins em 2024, que já sai das regressões pela receita.
 
@@ -124,7 +114,7 @@ As dummies de tempo não entram todas juntas em todas as estimações. No modelo
 A especificação acompanha \textcite{sakurai2009} nos controles fiscais e demográficos e no uso de tendências linear e quadrática. As diferenças são o deflator (IPCA, em vez do IGP-DI), a forma funcional (logaritmo, em vez de nível, mantido no teste R3), a ausência da ideologia partidária do prefeito e a inclusão do ano pré-eleitoral e da dummy de pandemia. As variáveis do Censo mudam dentro de cada município apenas pela interpolação entre 2010 e 2022; por isso seus coeficientes não são interpretados, e um teste de robustez (R15) indica que retirá-las altera pouco os resultados.
 
 % ------------------------------------------------------------------------------
-\section{Estatísticas descritivas}\label{sec:descritivas}
+\section{Análise descritiva}\label{sec:descritivas}
 
 A \autoref{tab:descritivas} apresenta as variáveis explicativas contínuas. O município típico da amostra é pequeno e depende fortemente de transferências: a média das transferências correntes per capita (R\$~5.406) é cerca de 11 vezes a da receita tributária (R\$~491).
 
@@ -157,7 +147,7 @@ As variáveis políticas são binárias e não entram na \autoref{tab:descritiva
 
 A proporção de prefeitos na coalizão do presidente muda de forma brusca entre os governos federais: é de 52,5\% em 2013--2014 e de 58,9\% em 2015--2018, cai para 1,2\% em 2019--2022 e sobe para 14,0\% em 2023--2025. A proporção alinhada ao governador varia menos entre os mandatos, de 40,5\% em 2019--2022 a 49,9\% em 2013--2014. Como a variável presidencial acompanha o período, comparar anos diferentes misturaria o alinhamento com tudo o mais que mudou entre os governos; por isso o modelo das coalizões usa efeito fixo de ano (\autoref{sec:especificacao}).
 
-A \autoref{tab:desc_dependentes} resume as variáveis dependentes.
+A \autoref{tab:desc_dependentes} resume as variáveis dependentes: Educação e Saúde concentram mais da metade do gasto médio, o que é coerente com os mínimos constitucionais de aplicação nessas áreas. Transporte e, sobretudo, Comunicações têm menos observações porque muitos municípios não registram despesa nessas funções em todos os anos.
 
 \begin{table}[htbp]
 \caption{Estatísticas descritivas das variáveis dependentes (R\$ de 2025 per capita)}\label{tab:desc_dependentes}
@@ -181,12 +171,7 @@ Comunicações & 12.456 & 9,20 & 19,82 & 0,00 & 945,35 \\ \hline
 \nota{Valores negativos registrados no Siconfi (sete município-anos) foram tratados como ausentes, como nos modelos, em que a despesa entra em ln(1 + valor per capita); os valores iguais a zero foram mantidos.}
 \end{table}
 
-Educação e Saúde concentram mais da metade do gasto médio, o que é coerente com os mínimos constitucionais de aplicação nessas áreas. Transporte e, sobretudo, Comunicações têm menos observações porque muitos municípios não registram despesa nessas funções em todos os anos.
-
-% ------------------------------------------------------------------------------
-\section{Evolução das despesas}\label{sec:graficos}
-
-Os gráficos desta seção mostram a média anual, entre os municípios, de ln(1 + despesa per capita), a mesma forma usada nos modelos: uma diferença de 0,01 entre dois anos corresponde a cerca de 1\%. A despesa total está na \autoref{fig:total}, e os grupos, na \autoref{fig:grupos1} e na \autoref{fig:grupos2}, cada um com a sua escala.
+Além dos níveis resumidos nas tabelas, interessa a evolução das despesas no tempo. Os gráficos a seguir mostram a média anual, entre os municípios, de ln(1 + despesa per capita), a mesma forma usada nos modelos: uma diferença de 0,01 entre dois anos corresponde a cerca de 1\%. A despesa total está na \autoref{fig:total}, e os grupos, na \autoref{fig:grupos1} e na \autoref{fig:grupos2}, cada um com a sua escala.
 
 \begin{figure}[htbp]
 \caption{Despesa total per capita, média do logaritmo}\label{fig:total}
@@ -223,15 +208,11 @@ A leitura gráfica sugere um ciclo eleitoral concentrado na composição do gast
 % ------------------------------------------------------------------------------
 \section{Dados em painel}\label{sec:painel}
 
-\subsection{O problema da variável omitida}
-
 Dados em painel acompanham as mesmas unidades de corte transversal, aqui os municípios, ao longo de vários períodos. A principal vantagem sobre um único corte transversal é permitir controlar características não observadas que não mudam no tempo \parencite[p.~247--248]{wooldridge2002}. Se essas características forem correlacionadas com as variáveis explicativas e ficarem no termo de erro, o estimador de mínimos quadrados ordinários é viesado e inconsistente; com observações repetidas da mesma unidade, é possível eliminá-las.
 
 No caso dos municípios, características como a cultura política local, a qualidade da gestão, a localização e a estrutura produtiva afetam o gasto e provavelmente se relacionam com o alinhamento político do prefeito e com as receitas. A amostra tem $N = 5.568$ municípios e $T = 13$ anos. Como $N$ é muito maior que $T$, vale a análise assintótica com $N$ grande e $T$ fixo adotada por \textcite[p.~250--251]{wooldridge2002}. O painel é desbalanceado, porque nem todos os municípios têm dados em todos os anos.
 
-\subsection{O modelo de efeitos não observados}
-
-O modelo básico \parencite[p.~251]{wooldridge2002} é
+Essa heterogeneidade é representada pelo modelo de efeitos não observados. O modelo básico \parencite[p.~251]{wooldridge2002} é
 \begin{equation}\label{eq:uem}
 y_{it} = \mathbf{x}_{it}\boldsymbol{\beta} + c_i + u_{it}, \qquad t = 1, \dots, T,
 \end{equation}
@@ -243,13 +224,9 @@ E(u_{it} \mid \mathbf{x}_{i1}, \dots, \mathbf{x}_{iT}, c_i) = 0, \qquad t = 1, \
 \end{equation}
 Isto é: controlados $\mathbf{x}_{it}$ e $c_i$, as variáveis explicativas de outros anos não afetam a despesa do ano $t$. Para \textcite[p.~251--252]{wooldridge2002}, a diferença entre ``efeitos fixos'' e ``efeitos aleatórios'' não está em tratar $c_i$ como parâmetro ou como variável aleatória, e sim em saber se $c_i$ é correlacionado com as variáveis explicativas.
 
-\subsection{Mínimos quadrados agrupados}
+A partir desse modelo, os estimadores diferem no tratamento dado a $c_i$. O estimador de mínimos quadrados agrupados (\textit{pooled}) trata a base como um único corte transversal, com erro composto $v_{it} = c_i + u_{it}$. Ele só é consistente se $c_i$ não for correlacionado com $\mathbf{x}_{it}$; mesmo assim, os erros de um mesmo município são correlacionados ao longo do tempo por causa de $c_i$, o que exige erros-padrão robustos \parencite[p.~256--257]{wooldridge2002}.
 
-O estimador de mínimos quadrados agrupados (\textit{pooled}) trata a base como um único corte transversal, com erro composto $v_{it} = c_i + u_{it}$. Ele só é consistente se $c_i$ não for correlacionado com $\mathbf{x}_{it}$; mesmo assim, os erros de um mesmo município são correlacionados ao longo do tempo por causa de $c_i$, o que exige erros-padrão robustos \parencite[p.~256--257]{wooldridge2002}.
-
-\subsection{Efeitos aleatórios}
-
-O estimador de efeitos aleatórios mantém $c_i$ no erro e supõe que ele não tem relação com as variáveis explicativas de nenhum período \parencite[p.~257]{wooldridge2002}:
+Para levar em conta essa correlação entre os erros, o estimador de efeitos aleatórios mantém $c_i$ no erro e supõe que ele não tem relação com as variáveis explicativas de nenhum período \parencite[p.~257]{wooldridge2002}:
 \begin{equation}\label{eq:re}
 E(c_i \mid \mathbf{x}_{i1}, \dots, \mathbf{x}_{iT}) = E(c_i) = 0.
 \end{equation}
@@ -260,9 +237,7 @@ y_{it} - \lambda \bar{y}_i = (\mathbf{x}_{it} - \lambda \bar{\mathbf{x}}_i)\bold
 \end{equation}
 em que $\sigma_c^2$ e $\sigma_u^2$ são as variâncias do efeito não observado e do erro idiossincrático. Se a hipótese da \autoref{eq:re} vale, o estimador é consistente e mais eficiente que o de efeitos fixos, e permite estimar o efeito de variáveis constantes no tempo; se ela falha, ele é inconsistente. Neste trabalho, as variâncias foram estimadas pelo método de \textcite{wallace1969}, porque o método usual não pôde ser calculado na presença de variáveis que só variam no tempo (ano eleitoral, tendências e PIB nacional).
 
-\subsection{Efeitos fixos}
-
-O estimador de efeitos fixos permite que $c_i$ seja correlacionado de forma arbitrária com as variáveis explicativas: mantém apenas a exogeneidade estrita da \autoref{eq:exog} \parencite[p.~265--266]{wooldridge2002}. Para eliminar $c_i$, subtrai-se de cada variável a sua média no tempo dentro do município, a chamada transformação \textit{within} \parencite[p.~267]{wooldridge2002}:
+Quando essa hipótese não é razoável, é preciso um estimador que não dependa dela. O estimador de efeitos fixos permite que $c_i$ seja correlacionado de forma arbitrária com as variáveis explicativas: mantém apenas a exogeneidade estrita da \autoref{eq:exog} \parencite[p.~265--266]{wooldridge2002}. Para eliminar $c_i$, subtrai-se de cada variável a sua média no tempo dentro do município, a chamada transformação \textit{within} \parencite[p.~267]{wooldridge2002}:
 \begin{equation}\label{eq:within}
 y_{it} - \bar{y}_i = (\mathbf{x}_{it} - \bar{\mathbf{x}}_i)\boldsymbol{\beta} + (u_{it} - \bar{u}_i).
 \end{equation}
@@ -270,17 +245,13 @@ Como $c_i$ é igual em todos os anos, ele desaparece, e $\boldsymbol{\beta}$ é 
 
 Os dois estimadores estão ligados pelo parâmetro $\lambda$ da \autoref{eq:quasi}: com $\lambda = 0$, o de efeitos aleatórios coincide com o de mínimos quadrados agrupados; com $\lambda$ próximo de 1, aproxima-se do de efeitos fixos \parencite[p.~287]{wooldridge2002}.
 
-\subsection{Teste de Hausman}
-
 Como a escolha depende de $c_i$ ser ou não correlacionado com as variáveis explicativas, \textcite{hausman1978} propôs comparar as duas estimativas. Sob a hipótese nula, ambos os estimadores são consistentes e o de efeitos aleatórios é eficiente; sob a alternativa, só o de efeitos fixos é consistente. Uma diferença estatisticamente significativa é evidência contra os efeitos aleatórios \parencite[p.~288--289]{wooldridge2002}:
 \begin{equation}\label{eq:hausman}
 H = (\hat{\boldsymbol{\delta}}_{EF} - \hat{\boldsymbol{\delta}}_{EA})' \left[ \widehat{\mathrm{Avar}}(\hat{\boldsymbol{\delta}}_{EF}) - \widehat{\mathrm{Avar}}(\hat{\boldsymbol{\delta}}_{EA}) \right]^{-1} (\hat{\boldsymbol{\delta}}_{EF} - \hat{\boldsymbol{\delta}}_{EA}) \sim \chi^2_M,
 \end{equation}
 em que $\boldsymbol{\delta}$ reúne os coeficientes das $M$ variáveis que variam entre municípios e no tempo. A versão clássica supõe erros homocedásticos e sem correlação serial. Quando isso não vale, \textcite[p.~291]{wooldridge2002} recomenda uma versão robusta baseada em regressão, equivalente à de \textcite{mundlak1978}: acrescentam-se ao modelo as médias por município das variáveis explicativas e testa-se, com erros-padrão robustos, se seus coeficientes são conjuntamente nulos. Este trabalho reporta as duas versões.
 
-\subsection{Erros-padrão}
-
-Mesmo com efeitos fixos, os erros idiossincráticos podem ser heterocedásticos e correlacionados ao longo do tempo dentro do município. Por isso \textcite[p.~274--276]{wooldridge2002} recomenda uma matriz de variância robusta a heterocedasticidade e a correlação serial, que corresponde ao erro-padrão agrupado por município. Essa matriz, porém, supõe que municípios diferentes são independentes \parencite[p.~250]{wooldridge2002}. Para variáveis comuns a todos os municípios no mesmo ano, como o ano eleitoral, choques nacionais tornam os erros correlacionados entre municípios. Nesse caso usa-se o estimador de \textcite{driscoll1998}, robusto também à dependência entre municípios no mesmo período.
+Escolhido o estimador, resta definir os erros-padrão. Mesmo com efeitos fixos, os erros idiossincráticos podem ser heterocedásticos e correlacionados ao longo do tempo dentro do município. Por isso \textcite[p.~274--276]{wooldridge2002} recomenda uma matriz de variância robusta a heterocedasticidade e a correlação serial, que corresponde ao erro-padrão agrupado por município. Essa matriz, porém, supõe que municípios diferentes são independentes \parencite[p.~250]{wooldridge2002}. Para variáveis comuns a todos os municípios no mesmo ano, como o ano eleitoral, choques nacionais tornam os erros correlacionados entre municípios. Nesse caso usa-se o estimador de \textcite{driscoll1998}, robusto também à dependência entre municípios no mesmo período.
 
 % ------------------------------------------------------------------------------
 \section{Especificação empírica}\label{sec:especificacao}
@@ -291,9 +262,7 @@ A despesa e as receitas entram em logaritmo por três motivos. Primeiro, os muni
 
 Usa-se ln(1 + x), e não ln(x), para manter os zeros na regressão, com valor 0. Para valores acima de R\$~10, a diferença entre as duas formas é menor que 0,1. O PIB nacional, que nunca é zero, entra em ln(x). A especificação em nível é mantida no teste R3, que também permite a comparação direta com \textcite{sakurai2009}.
 
-\subsection{Escolha do estimador}
-
-Em todas as nove variáveis, o teste de Hausman rejeita a hipótese nula, tanto na versão clássica quanto na robusta (\autoref{tab:hausman}). A heterogeneidade não observada dos municípios é, portanto, correlacionada com as variáveis explicativas, e o estimador de efeitos fixos é o adequado, como em \textcite{sakurai2009}.
+O primeiro passo é a escolha do estimador. Em todas as nove variáveis, o teste de Hausman rejeita a hipótese nula, tanto na versão clássica quanto na robusta (\autoref{tab:hausman}). A heterogeneidade não observada dos municípios é, portanto, correlacionada com as variáveis explicativas, e o estimador de efeitos fixos é o adequado, como em \textcite{sakurai2009}.
 
 \begin{table}[htbp]
 \caption{Teste de Hausman: efeitos fixos contra efeitos aleatórios}\label{tab:hausman}
@@ -317,9 +286,7 @@ Comunicações & 542,95 & 178,34 & 12.360 & 1.896 \\ \hline
 \nota{Especificação do modelo A, em logaritmo. Em todos os casos, p-valor $<$ 0,001 nas duas versões; hipótese nula: o estimador de efeitos aleatórios é consistente. Versão robusta: teste de \textcite{mundlak1978} com erros-padrão agrupados por município.}
 \end{table}
 
-\subsection{Modelo A: ciclo eleitoral}
-
-Para o município $i$, o ano $t$ e o grupo de despesa $k$:
+Com os efeitos fixos escolhidos, o modelo A mede o ciclo eleitoral. Para o município $i$, o ano $t$ e o grupo de despesa $k$:
 \begin{equation}\label{eq:modeloA}
 \begin{split}
 \ln(1 + d^k_{it}) = {} & \beta_1 \mathit{Eleitoral}_t + \beta_2 \mathit{PreEleitoral}_t + \beta_3 \mathit{Pandemia}_t + \gamma_1 \mathit{CoalGov}_{it} + \gamma_2 \mathit{CoalPres}_{it} \\
@@ -331,8 +298,7 @@ em que $d$ é a despesa per capita, $\mathit{Trib}$ e $\mathit{Transf}$ são a r
 
 A dummy de pandemia vale 1 em 2020, que também é ano eleitoral. Com ela, o coeficiente $\beta_1$ é identificado pelas eleições de 2016 e 2024, e $\beta_3$ mede quanto 2020 se afastou de um ano eleitoral típico.
 
-\subsection{Modelo B: coalizões}
-
+O modelo B mede o efeito do alinhamento político:
 \begin{equation}\label{eq:modeloB}
 \begin{split}
 \ln(1 + d^k_{it}) = {} & \gamma_1 \mathit{CoalGov}_{it} + \gamma_2 \mathit{CoalPres}_{it} + \delta_1 \ln(1 + \mathit{Trib}_{it}) + \delta_2 \ln(1 + \mathit{Transf}_{it}) \\
@@ -341,25 +307,15 @@ A dummy de pandemia vale 1 em 2020, que também é ano eleitoral. Com ela, o coe
 \end{equation}
 em que $\tau_t$ é o efeito fixo de ano. Ele absorve tudo o que atinge todos os municípios no mesmo ano: o calendário eleitoral, a pandemia, o ciclo econômico e mudanças de regras nacionais. Assim, o alinhamento é medido comparando, dentro do mesmo ano, prefeitos alinhados e não alinhados. Isso é necessário porque a proporção de prefeitos na coalizão do presidente muda com cada governo federal (\autoref{tab:politicas}); sem o efeito de ano, o coeficiente misturaria o alinhamento com o período. Os erros-padrão são agrupados por município \parencite[p.~274--276]{wooldridge2002}.
 
-\subsection{Interpretação dos coeficientes}\label{sec:interpretacao}
-
-Como a variável dependente está em logaritmo, o coeficiente $b$ de uma dummy se lê aproximadamente como uma variação percentual; o valor exato é $100 \times (\exp(b) - 1)$. Por exemplo, $b = 0{,}05$ indica que, no ano eleitoral, o município gasta cerca de 5\% a mais naquele grupo, mantidos os demais fatores. Os coeficientes das receitas, também em logaritmo, são elasticidades: um coeficiente de 0,3 indica que uma receita 1\% maior está associada a uma despesa cerca de 0,3\% maior.
+Nos dois modelos, como a variável dependente está em logaritmo, o coeficiente $b$ de uma dummy se lê aproximadamente como uma variação percentual; o valor exato é $100 \times (\exp(b) - 1)$. Por exemplo, $b = 0{,}05$ indica que, no ano eleitoral, o município gasta cerca de 5\% a mais naquele grupo, mantidos os demais fatores. Os coeficientes das receitas, também em logaritmo, são elasticidades: um coeficiente de 0,3 indica que uma receita 1\% maior está associada a uma despesa cerca de 0,3\% maior.
 
 Essa leitura exige valores que não sejam muito pequenos. Em Comunicações, 74\% dos valores são de até R\$~10 e 25\% são menores que R\$~1; ali, o coeficiente não se lê como variação percentual, e o resultado não será interpretado. O mesmo vale, em parte, para Transporte e Agricultura, em que cerca de 13\% dos valores são de até R\$~10.
 
-Um resultado é considerado sólido quando atende a três condições: é significativo tanto com o erro de \textcite{driscoll1998} quanto com o erro agrupado por município, porque o estimador de Driscoll e Kraay perde precisão quando há poucos períodos, como aqui (13 anos); não depende de uma só eleição; e vale nas duas formas funcionais, em logaritmo e em nível (R3).
+Por fim, um resultado é considerado sólido quando atende a três condições: é significativo tanto com o erro de \textcite{driscoll1998} quanto com o erro agrupado por município, porque o estimador de Driscoll e Kraay perde precisão quando há poucos períodos, como aqui (13 anos); não depende de uma só eleição; e vale nas duas formas funcionais, em logaritmo e em nível (R3).
 
 % ------------------------------------------------------------------------------
 \section{Testes de robustez}\label{sec:robustez}
 
-Cada teste reestima os modelos mudando uma decisão da especificação principal. Cinco testes são discutidos no texto, por tratarem das decisões que mais podem afetar as conclusões:
-
-\begin{enumerate}
-\item \textbf{Especificação em nível (R3)}: dependente, receitas e PIB em reais, para verificar se os resultados dependem da forma funcional e comparar com a literatura;
-\item \textbf{Especificação de \textcite{sakurai2009} (R5)}: modelo A sem ano pré-eleitoral e sem dummy de pandemia, com erro agrupado por município, para comparar com a literatura;
-\item \textbf{Erro-padrão agrupado por município (R12)} no modelo A, em vez de Driscoll e Kraay, para verificar se a significância depende do tipo de erro;
-\item \textbf{Modelo A sem a dummy de pandemia (R14)}, em que 2020 volta a contar como ano eleitoral comum e o efeito eleitoral é medido pelas três eleições;
-\item \textbf{Um efeito para cada eleição (R16)}: o ano eleitoral é dividido em dummies para 2016 e para 2024, e o pré-eleitoral em dummies para 2015, 2019 e 2023, para verificar se o efeito médio vem de uma única eleição.
-\end{enumerate}
+Cada teste reestima os modelos mudando uma decisão da especificação principal. Cinco testes são comentados com mais detalhe no texto, por tratarem das decisões que mais podem afetar as conclusões. A especificação em nível (R3) usa dependente, receitas e PIB em reais, para verificar se os resultados dependem da forma funcional e comparar com a literatura. A especificação de \textcite{sakurai2009} (R5) usa o modelo A sem ano pré-eleitoral e sem dummy de pandemia, com erro agrupado por município, para comparar com a literatura. O erro-padrão agrupado por município (R12) é usado no modelo A, em vez de Driscoll e Kraay, para verificar se a significância depende do tipo de erro. No modelo A sem a dummy de pandemia (R14), 2020 volta a contar como ano eleitoral comum, e o efeito eleitoral é medido pelas três eleições. Por fim, o R16 estima um efeito para cada eleição: o ano eleitoral é dividido em dummies para 2016 e para 2024, e o pré-eleitoral em dummies para 2015, 2019 e 2023, para verificar se o efeito médio vem de uma única eleição.
 
 Os demais testes, que tratam da regra de padronização das siglas, das eleições suplementares, da participação de cada área na despesa total, da limpeza da base, do registro irregular de algumas funções e dos controles, estão descritos no \autoref{ap:robustez}.
