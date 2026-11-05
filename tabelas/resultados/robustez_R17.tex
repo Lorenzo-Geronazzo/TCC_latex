@@ -1,0 +1,32 @@
+% Gerado por regressao/06_tabelas_latex.R (projeto Modelagem). Não editar à mão.
+\begin{sidewaystable}
+\caption{Robustez R17 — população interpolada em 2022 e 2023}\label{tab:robustez_R17}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr\linewidth-594pt\relax}>{\centering\arraybackslash}p{60pt}>{\centering\arraybackslash}p{60pt}>{\centering\arraybackslash}p{60pt}>{\centering\arraybackslash}p{60pt}>{\centering\arraybackslash}p{60pt}>{\centering\arraybackslash}p{60pt}>{\centering\arraybackslash}p{60pt}>{\centering\arraybackslash}p{60pt}>{\centering\arraybackslash}p{60pt}@{}}
+\hline
+\textbf{Variável} & \textbf{\hspace{0pt}Despesa total} & \textbf{\hspace{0pt}Saúde e Saneamento} & \textbf{\hspace{0pt}Educação e Cultura} & \textbf{\hspace{0pt}Habitação e Urbanismo} & \textbf{\hspace{0pt}Assistência Social} & \textbf{\hspace{0pt}Transporte} & \textbf{\hspace{0pt}Administração} & \textbf{\hspace{0pt}Agricultura} & \textbf{\hspace{0pt}Comunicações} \\ \hline
+\multicolumn{10}{@{}l}{\textit{Modelo A (ciclo eleitoral)}} \\
+Ano eleitoral & 0,0522\textsuperscript{***} & 0,0412\textsuperscript{***} & 0,0347\textsuperscript{**} & 0,2391\textsuperscript{***} & 0,0679\textsuperscript{***} & 0,1782\textsuperscript{***} & 0,0100 & 0,0532\textsuperscript{***} & 0,0313\textsuperscript{***} \\
+ & (0,0089) & (0,0042) & (0,0151) & (0,0161) & (0,0115) & (0,0191) & (0,0079) & (0,0139) & (0,0113) \\
+Ano pré-eleitoral & 0,0208 & $-$0,0084 & 0,0460\textsuperscript{**} & 0,0518\textsuperscript{**} & 0,0359\textsuperscript{*} & 0,0193 & 0,0073 & 0,0569\textsuperscript{**} & 0,0615\textsuperscript{***} \\
+ & (0,0143) & (0,0065) & (0,0229) & (0,0237) & (0,0200) & (0,0236) & (0,0084) & (0,0223) & (0,0125) \\
+\hline
+Observações & 70.669 & 70.526 & 70.550 & 69.574 & 70.484 & 54.422 & 70.553 & 64.464 & 12.360 \\
+Municípios & 5.568 & 5.568 & 5.568 & 5.564 & 5.568 & 5.205 & 5.568 & 5.436 & 1.896 \\
+R\textsuperscript{2} & 0,844 & 0,668 & 0,668 & 0,256 & 0,360 & 0,132 & 0,286 & 0,126 & 0,029 \\[6pt]
+\multicolumn{10}{@{}l}{\textit{Modelo B (coalizões)}} \\
+Prefeito na coalizão & 0,0036\textsuperscript{***} & 0,0009 & 0,0032\textsuperscript{*} & 0,0160\textsuperscript{**} & 0,0008 & 0,0113 & 0,0069\textsuperscript{***} & 0,0109 & $-$0,0023 \\
+do governador & (0,0010) & (0,0018) & (0,0017) & (0,0064) & (0,0029) & (0,0100) & (0,0027) & (0,0075) & (0,0174) \\
+Prefeito na coalizão & $-$0,0010 & 0,0002 & $-$0,0026 & $-$0,0162\textsuperscript{*} & $-$0,0057 & 0,0419\textsuperscript{***} & 0,0043 & 0,0045 & 0,0075 \\
+do presidente & (0,0014) & (0,0025) & (0,0022) & (0,0085) & (0,0040) & (0,0138) & (0,0037) & (0,0102) & (0,0243) \\
+\hline
+Observações & 70.669 & 70.526 & 70.550 & 69.574 & 70.484 & 54.422 & 70.553 & 64.464 & 12.360 \\
+Municípios & 5.568 & 5.568 & 5.568 & 5.564 & 5.568 & 5.205 & 5.568 & 5.436 & 1.896 \\
+R\textsuperscript{2} & 0,360 & 0,143 & 0,181 & 0,033 & 0,059 & 0,017 & 0,065 & 0,015 & 0,013 \\
+\hline
+\end{tabular}
+\fonte{Elaboração própria.}
+\nota{Variável dependente e receitas em logaritmo de (1 + valor per capita, R\$ de 2025). O coeficiente de uma dummy se lê como variação percentual aproximada (exata: 100 $\times$ (exp(b) $-$ 1)). Modelo A: efeito fixo de município, erros-padrão de Driscoll-Kraay. Modelo B: efeitos fixos de município e de ano, erros-padrão agrupados por município. Erros-padrão entre parênteses. \textsuperscript{***}p$<$0,01; \textsuperscript{**}p$<$0,05; \textsuperscript{*}p$<$0,1.}
+\end{sidewaystable}
