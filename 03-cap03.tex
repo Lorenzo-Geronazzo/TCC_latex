@@ -21,8 +21,8 @@ A base tem uma observação por município-ano e reúne dados fiscais da Secreta
 \begin{tabular}{|>{\raggedright\arraybackslash}p{2.6cm}|>{\raggedright\arraybackslash}p{2.6cm}|>{\raggedright\arraybackslash}p{3.6cm}|>{\raggedright\arraybackslash}p{5.2cm}|}
 \hline
 \textbf{Dado} & \textbf{Fonte} & \textbf{Onde foi extraído} & \textbf{Tratamento aplicado} \\ \hline
-Despesa por função & STN, Siconfi (DCA, Anexo I-E) & Base dos Dados: \nolinkurl{br_me_siconfi.municipio_despesas_funcao} & Estágio ``despesas pagas''; exclusão das despesas intraorçamentárias; uso apenas das 28 funções; agregação em grupos; deflação; valores per capita; ln(1 + valor) nos modelos \\ \hline
-Receita tributária e transferências correntes & STN, Siconfi (DCA, receitas orçamentárias) & Base dos Dados: \nolinkurl{br_me_siconfi.municipio_receitas_orcamentarias} & Receitas brutas realizadas; contas 1.1.1 e 1.1.7; deflação; per capita; ln(1 + valor) nos modelos; valores negativos e Tocantins em 2024 tratados como ausentes \\ \hline
+Despesa por função & STN, Siconfi (DCA, Anexo I-E) & Base dos Dados: \nolinkurl{br_me_siconfi.municipio_despesas_funcao} & Estágio ``despesas pagas''; exclusão das despesas intraorçamentárias; uso apenas das 28 funções; agregação em grupos; deflação; valores per capita; logaritmo nos modelos \\ \hline
+Receita tributária e transferências correntes & STN, Siconfi (DCA, receitas orçamentárias) & Base dos Dados: \nolinkurl{br_me_siconfi.municipio_receitas_orcamentarias} & Receitas brutas realizadas; contas 1.1.1 e 1.1.7; deflação; per capita; logaritmo nos modelos; valores negativos e Tocantins em 2024 tratados como ausentes \\ \hline
 Prefeito eleito, partido e reeleição & TSE & Base dos Dados: \nolinkurl{br_tse_eleicoes} (resultados e candidatos), eleições de 2008 a 2024 & Um prefeito por município-ano (o que governou a maior parte do ano); eleições suplementares incorporadas; segundo mandato identificado por título de eleitor, CPF ou nome \\ \hline
 Governador, presidente e coligações & TSE & Base dos Dados: \nolinkurl{br_tse_eleicoes} (resultados e partidos); para 2010, arquivo de coligações do Portal de Dados Abertos do TSE & Apenas eleições ordinárias; padronização das siglas partidárias (mudanças de nome e fusões) \\ \hline
 População & IBGE, estimativas populacionais e Censo Demográfico 2022 & Base dos Dados: \nolinkurl{br_ibge_populacao.municipio} & Estimativas em 2013--2021 e 2024--2025; contagem do Censo em 2022; em 2023, valores próximos aos do Censo; denominador dos valores per capita; logaritmo como controle \\ \hline
@@ -54,14 +54,14 @@ A população vem das estimativas do IBGE em 2013--2021 e 2024--2025. Em 2022, �
 
 Por fim, a base exigiu decisões sobre valores ausentes e atípicos. A ausência de uma função não foi tratada como gasto zero, porque o município pode ter lançado o gasto em outra função. Nesses casos, o município-ano sai da regressão daquela variável. Foram marcados como atípicos 66 município-anos em que a despesa total per capita ficou abaixo de 20\% ou acima de cinco vezes a mediana do próprio município, variações isoladas que podem indicar erros de lançamento. A receita tributária foi considerada ausente em dois casos: quando negativa e em todos os municípios do Tocantins em 2024. Nesse ano, a mediana da receita tributária per capita do estado cai de R\$~493 para R\$~353 e volta a R\$~501 em 2025, e 31 dos seus municípios registram receita negativa, o que sugere possíveis erros de lançamento concentrados no estado e no ano. Ao todo, 141 município-anos ficaram sem receita tributária, 137 deles do Tocantins em 2024. Como a receita tributária é controle em todas as regressões, esses município-anos saem dos modelos principais. As duas decisões são avaliadas no teste R10 (\autoref{sec:robustez} e \autoref{ap:robustez}), que indica que elas não alteram as conclusões principais: nenhum coeficiente de interesse muda de sinal, deixa de ser significativo ou passa a ser significativo.
 
-Nas nove variáveis dependentes, há 7 município-anos com valor negativo e 4 com valor zero. Como os modelos usam ln(1 + x) (\autoref{sec:especificacao}), os zeros permanecem nas regressões, com valor 0, e os negativos ficam ausentes, porque não têm logaritmo. Cinco dos 7 negativos são do Tocantins em 2024, que já sai das regressões pela receita.
+Nas nove variáveis dependentes, há 7 município-anos com valor negativo e 4 com valor zero. Na forma logarítmica usada nos modelos (\autoref{sec:especificacao}), os zeros permanecem nas regressões, e os negativos ficam ausentes. Cinco dos 7 negativos são do Tocantins em 2024, que já sai das regressões pela receita.
 
 A base final tem 71.307 município-anos de 5.569 municípios; 4.769 municípios aparecem nos 13 anos, de modo que o painel é desbalanceado. Depois da exclusão dos atípicos de despesa, restam 71.241 município-anos. O número de observações de cada regressão é menor, por causa dos valores ausentes nas dependentes e nos controles, e está indicado nas tabelas de resultados.
 
 % ------------------------------------------------------------------------------
 \section{Variáveis}\label{sec:variaveis}
 
-As variáveis dependentes são a despesa total e oito grupos de funções, em reais de 2025 por habitante (\autoref{tab:dependentes}); nos modelos, elas entram em ln(1 + valor per capita) (\autoref{sec:especificacao}). Os agrupamentos seguem \textcite{sakurai2009}, com dois ajustes. O primeiro é tratar a Assistência Social sem a Previdência. O gasto da função Previdência Social nos municípios corresponde sobretudo ao pagamento de aposentadorias e pensões dos servidores pelo regime próprio previsto no art. 40 da Constituição Federal \parencite[art.~40]{cf1988}, benefícios definidos em lei e pagos ao longo de vários anos, o que caracteriza uma despesa obrigatória de caráter continuado, nos termos do art. 17 da Lei de Responsabilidade Fiscal \parencite[art.~17]{lrf2000}, sem margem para variações discricionárias ligadas à eleição. Além disso, \textcite{drazen2010} encontram corte de pensões no período eleitoral, de modo que somar as duas funções poderia misturar movimentos de sinais opostos, e a função é informada de forma irregular: só 2.134 municípios a registram em todos os anos, e 2.102 nunca a registram. O agrupamento de Sakurai, com a Previdência, é avaliado no teste R8. O segundo ajuste é a inclusão de Administração, um gasto pouco visível ao eleitor que serve de contraste.
+As variáveis dependentes são a despesa total e oito grupos de funções, em reais de 2025 por habitante (\autoref{tab:dependentes}); nos modelos, elas entram em logaritmo (\autoref{sec:especificacao}). Os agrupamentos seguem \textcite{sakurai2009}, com dois ajustes. O primeiro é tratar a Assistência Social sem a Previdência. O gasto da função Previdência Social nos municípios corresponde sobretudo ao pagamento de aposentadorias e pensões dos servidores pelo regime próprio previsto no art. 40 da Constituição Federal \parencite[art.~40]{cf1988}, benefícios definidos em lei e pagos ao longo de vários anos, o que caracteriza uma despesa obrigatória de caráter continuado, nos termos do art. 17 da Lei de Responsabilidade Fiscal \parencite[art.~17]{lrf2000}, sem margem para variações discricionárias ligadas à eleição. Além disso, \textcite{drazen2010} encontram corte de pensões no período eleitoral, de modo que somar as duas funções poderia misturar movimentos de sinais opostos, e a função é informada de forma irregular: só 2.134 municípios a registram em todos os anos, e 2.102 nunca a registram. O agrupamento de Sakurai, com a Previdência, é avaliado no teste R8. O segundo ajuste é a inclusão de Administração, um gasto pouco visível ao eleitor que serve de contraste.
 
 \begin{table}[htbp]
 \caption{Variáveis dependentes}\label{tab:dependentes}
@@ -81,7 +81,7 @@ Agricultura & Agricultura & 3.20.000 \\
 Comunicações & Comunicações & 3.24.000 \\ \hline
 \end{tabular}
 \fonte{Elaboração própria, com base em \textcite{sakurai2009}.}
-\nota{Despesas pagas per capita, em R\$ de 2025; nos modelos, em ln(1 + valor per capita). \texttt{id\_conta\_bd} é o código da conta na Base dos Dados; os dois dígitos do meio correspondem ao código da função na Portaria nº 42/1999 \parencite{portaria42_1999}.}
+\nota{Despesas pagas per capita, em R\$ de 2025; nos modelos, em logaritmo. \texttt{id\_conta\_bd} é o código da conta na Base dos Dados; os dois dígitos do meio correspondem ao código da função na Portaria nº 42/1999 \parencite{portaria42_1999}.}
 \end{table}
 
 As variáveis explicativas estão no \autoref{qua:explicativas}. As de interesse são as dummies de calendário eleitoral e as de alinhamento político; as demais são controles.
@@ -170,17 +170,17 @@ Agricultura & 64.967 & 131,95 & 224,45 & 0,00 & 4.039,04 \\
 Comunicações & 12.456 & 9,20 & 19,82 & 0,00 & 945,35 \\ \hline
 \end{tabular}
 \fonte{Elaboração própria com dados do Siconfi e do IBGE.}
-\nota{Valores negativos registrados no Siconfi (sete município-anos) foram tratados como ausentes, como nos modelos, em que a despesa entra em ln(1 + valor per capita); os valores iguais a zero foram mantidos.}
+\nota{Valores negativos registrados no Siconfi (sete município-anos) foram tratados como ausentes, como nos modelos, em que a despesa entra em logaritmo; os valores iguais a zero foram mantidos.}
 \end{table}
 
-Além dos níveis resumidos nas tabelas, interessa a evolução das despesas no tempo. Os gráficos a seguir mostram a média anual, entre os municípios, de ln(1 + despesa per capita), a mesma forma usada nos modelos: uma diferença de 0,01 entre dois anos corresponde a cerca de 1\%. A despesa total está na \autoref{fig:total}, e os grupos, na \autoref{fig:grupos1} e na \autoref{fig:grupos2}, cada um com a sua escala.
+Além dos níveis resumidos nas tabelas, interessa a evolução das despesas no tempo. Os gráficos a seguir mostram a média anual, entre os municípios, do logaritmo da despesa per capita, a mesma forma usada nos modelos: uma diferença de 0,01 entre dois anos corresponde a cerca de 1\%. A despesa total está na \autoref{fig:total}, e os grupos, na \autoref{fig:grupos1} e na \autoref{fig:grupos2}, cada um com a sua escala.
 
 \begin{figure}[htbp]
 \caption{Despesa total per capita, média do logaritmo}\label{fig:total}
 \centering
 \includegraphics[width=0.9\textwidth]{fig/metodologia/serie_despesa_total_log.png}
 \fonte{Elaboração própria com dados do Siconfi e do IBGE.}
-\nota{Média simples, entre os municípios que informaram a despesa no ano, de ln(1 + despesa per capita, em reais de 2025). Faixas em laranja: anos eleitorais (2016, 2020 e 2024); em amarelo: anos pré-eleitorais (2015, 2019 e 2023).}
+\nota{Média simples, entre os municípios que informaram a despesa no ano, do logaritmo da despesa per capita, em reais de 2025. Faixas em laranja: anos eleitorais (2016, 2020 e 2024); em amarelo: anos pré-eleitorais (2015, 2019 e 2023).}
 \end{figure}
 
 \begin{figure}[htbp]
@@ -188,7 +188,7 @@ Além dos níveis resumidos nas tabelas, interessa a evolução das despesas no 
 \centering
 \includegraphics[width=\textwidth]{fig/metodologia/grupos_painel_1.png}
 \fonte{Elaboração própria com dados do Siconfi e do IBGE.}
-\nota{Média simples, entre os municípios que informaram a despesa no ano, de ln(1 + despesa per capita, em reais de 2025). Escalas diferentes em cada painel. Faixas como na \autoref{fig:total}.}
+\nota{Média simples, entre os municípios que informaram a despesa no ano, do logaritmo da despesa per capita, em reais de 2025. Escalas diferentes em cada painel. Faixas como na \autoref{fig:total}.}
 \end{figure}
 
 \begin{figure}[htbp]
@@ -196,12 +196,14 @@ Além dos níveis resumidos nas tabelas, interessa a evolução das despesas no 
 \centering
 \includegraphics[width=\textwidth]{fig/metodologia/grupos_painel_2.png}
 \fonte{Elaboração própria com dados do Siconfi e do IBGE.}
-\nota{Média simples, entre os municípios que informaram a despesa no ano, de ln(1 + despesa per capita, em reais de 2025). Escalas diferentes em cada painel. Faixas como na \autoref{fig:total}.}
+\nota{Média simples, entre os municípios que informaram a despesa no ano, do logaritmo da despesa per capita, em reais de 2025. Escalas diferentes em cada painel. Faixas como na \autoref{fig:total}.}
 \end{figure}
 
 A \autoref{fig:total} mostra a média do logaritmo da despesa total, que fica estável entre 2013 e 2017, entre 8,29 e 8,35, período que inclui a recessão de 2015--2016. Essa média cresce de forma gradual até 2020, quando chega a 8,47, fica nesse nível em 2021 e salta para 8,72 em 2022, chegando a 8,88 em 2025. Convertida em reais pela exponencial, ela corresponde à média geométrica da despesa per capita: cerca de R\$~4.750 em 2021, R\$~6.120 em 2022 e R\$~7.190 em 2025. Já a média aritmética da despesa per capita passa de cerca de R\$~5.160 em 2021 para R\$~6.570 em 2022 e fica perto de R\$~7.700 em 2024 e 2025; ela é maior porque é puxada pelos municípios que gastam mais. Os valores per capita de 2022 e 2023 são afetados pela mudança de base da população (\autoref{sec:dados}).
 
-Habitação e Urbanismo e Transporte têm picos em 2016, 2020 e 2024 e quedas em 2017, 2021 e 2025 (\autoref{fig:grupos1}). Em Habitação e Urbanismo, por exemplo, a média cai de 5,92 em 2020 para 5,74 em 2021 e de 6,33 em 2024 para 6,06 em 2025. É o padrão previsto pela teoria dos ciclos políticos orçamentários, em que obras e serviços visíveis são concentrados no ano da eleição, mas os dois grupos também sobem em 2022, ano sem eleição municipal. Assistência Social também tem picos em 2020 e 2024.
+O crescimento da despesa municipal a partir de 2021 ocorre em um período de expansão das receitas dos governos subnacionais. Segundo \textcite{schymura2025}, as transferências da União a estados e municípios, que ficaram em torno de R\$~350 bilhões por ano entre 2011 e 2019, em termos reais, subiram até R\$~550 bilhões em 2024; o autor associa parte desse aumento a mudanças aprovadas pelo Congresso, como a elevação da alíquota do Fundo de Participação dos Municípios (FPM) em 2021 e a ampliação do Fundeb a partir de 2021. A Emenda Constitucional nº 112/2021 destinou ao FPM mais 1\% da arrecadação do imposto de renda e do IPI, com entrada gradual a partir de 2022 \parencite{ec112_2021}, e a Emenda Constitucional nº 108/2020 elevou a complementação da União ao Fundeb de 12\% do total de recursos dos fundos, no primeiro ano, para 23\%, no sexto \parencite{ec108_2020}. Para os municípios, a Firjan estima que as receitas cresceram, em média, 56,5\% em termos reais entre 2019 e 2024 \parencite[p.~9]{firjan2025}, e o Ipea, com dados dos relatórios de execução orçamentária do Siconfi para uma amostra de cerca de 4,5 mil municípios, estima aumentos reais das receitas correntes municipais de 8,7\% em 2022, 4,1\% em 2023 e 9,0\% em 2024 \parencite[p.~10]{santana2025}. Esse movimento é compatível com a alta das duas receitas municipais na \autoref{fig:receitas}. Do lado da despesa, os investimentos dos governos municipais passaram de 0,53\% do PIB em 2021 para 1,15\% em 2024 e responderam por pouco mais de 60\% do aumento do investimento do governo geral no período \parencite[p.~120]{bndes2025}.
+
+Habitação e Urbanismo e Transporte têm picos em 2016, 2020 e 2024 e quedas em 2017, 2021 e 2025 (\autoref{fig:grupos1}). Em Habitação e Urbanismo, por exemplo, a média cai de 5,92 em 2020 para 5,74 em 2021 e de 6,33 em 2024 para 6,06 em 2025. É o padrão previsto pela teoria dos ciclos políticos orçamentários, em que obras e serviços visíveis são concentrados no ano da eleição, mas os dois grupos também sobem em 2022, ano sem eleição municipal. Essa alta coincide com a expansão dos investimentos municipais descrita acima, que o BNDES relaciona às eleições locais, às transferências constitucionais federais e ao maior volume de emendas parlamentares \parencite[p.~121]{bndes2025}. O Ipea registra, em uma amostra de cerca de 4,6 mil municípios, crescimento real dos investimentos municipais de 6,5\% em 2022, 20,1\% em 2023 e 26,1\% em 2024 e associa a alta de 2024 ao ano eleitoral \parencite[p.~10]{santana2025}. Os dados deste trabalho, porém, não separam investimento de custeio dentro de cada função. Assistência Social também tem picos em 2020 e 2024.
 
 Saúde e Saneamento sobe com força em 2020, de 7,02 para 7,20, e não volta ao nível anterior, o que mistura o efeito da pandemia com o da eleição daquele ano; esse é o motivo da dummy de pandemia no modelo. Educação e Cultura fica praticamente estável até 2019, entre 7,14 e 7,21, cai em 2020, para 7,12, e salta em 2022, de 7,17 para 7,51, sem pico nos anos eleitorais, o que é coerente com a rigidez do gasto vinculado (\autoref{fig:grupos2}). Parte dessa rigidez vem dos mínimos de aplicação: os municípios devem aplicar pelo menos 25\% da receita resultante de impostos, compreendida a proveniente de transferências, na manutenção e desenvolvimento do ensino \parencite[art.~212]{cf1988}, e pelo menos 15\% da arrecadação dos impostos municipais e das transferências constitucionais de impostos em ações e serviços públicos de saúde \parencite[art.~7º]{lc141_2012}. Como esses mínimos são calculados sobre a receita, o gasto em Educação e em Saúde tende a acompanhar a arrecadação, o que é compatível com a ausência de pico visível nos anos eleitorais na média de Educação e Cultura. Administração cai entre 2014 e 2016, de 6,39 para 6,31, e cresce depois, sem padrão eleitoral claro. Agricultura cai entre 2014 e 2017, de 3,88 para 3,69, e salta em 2022, de 3,92 para 4,27. Comunicações oscila muito, reflexo da amostra pequena.
 
@@ -212,7 +214,7 @@ A \autoref{fig:receitas} mostra a mesma medida para as duas receitas usadas como
 \centering
 \includegraphics[width=\textwidth]{fig/metodologia/receitas_painel.png}
 \fonte{Elaboração própria com dados do Siconfi e do IBGE.}
-\nota{Média simples, entre os municípios que informaram a receita no ano, de ln(1 + receita per capita, em reais de 2025), na base após a limpeza descrita na \autoref{sec:dados}. Escalas diferentes em cada painel. Faixas como na \autoref{fig:total}.}
+\nota{Média simples, entre os municípios que informaram a receita no ano, do logaritmo da receita per capita, em reais de 2025, na base após a limpeza descrita na \autoref{sec:dados}. Escalas diferentes em cada painel. Faixas como na \autoref{fig:total}.}
 \end{figure}
 
 A leitura gráfica sugere um ciclo eleitoral concentrado na composição do gasto, mas não separa a eleição de outros fatores do mesmo ano, como a pandemia em 2020 e o salto de 2022 em diante. A análise econométrica busca fazer essa separação controlando receitas, demografia, PIB e tendência.
@@ -228,7 +230,7 @@ Essa heterogeneidade é representada pelo modelo de efeitos não observados. O m
 \begin{equation}\label{eq:uem}
 y_{it} = \mathbf{x}_{it}\boldsymbol{\beta} + c_i + u_{it}, \qquad t = 1, \dots, T,
 \end{equation}
-em que $y_{it}$ é o logaritmo da despesa per capita do município $i$ no ano $t$, medido como ln(1 + despesa per capita), $\mathbf{x}_{it}$ é o vetor de variáveis explicativas, $c_i$ é o efeito não observado (heterogeneidade do município, constante no tempo) e $u_{it}$ é o erro idiossincrático, que varia entre municípios e ao longo do tempo.
+em que $y_{it}$ é o logaritmo da despesa per capita do município $i$ no ano $t$ (\autoref{sec:especificacao}), $\mathbf{x}_{it}$ é o vetor de variáveis explicativas, $c_i$ é o efeito não observado (heterogeneidade do município, constante no tempo) e $u_{it}$ é o erro idiossincrático, que varia entre municípios e ao longo do tempo.
 
 Os estimadores apresentados a seguir exigem exogeneidade estrita das variáveis explicativas, condicional ao efeito não observado \parencite[p.~253]{wooldridge2002}:
 \begin{equation}\label{eq:exog}
