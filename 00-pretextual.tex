@@ -28,29 +28,30 @@
 \ifthenelse{\equal{\terTermoAprovacao}{Sim}}{
 \insereAprovacao}{}
 
-% Dedicatória, agradecimentos e epígrafe: desativados no rascunho
-% (os textos continuam no 00-dados.tex; para voltar, tirar os %)
+% Dedicatória (canto inferior direito) e agradecimentos: textos no 00-dados.tex
 % Dedicatória
 % ----------------------------------------------------------
-%\ifthenelse{\equal{\terDedicatoria}{Sim}}{
-%\begin{dedicatoria}
-%   \vspace*{\fill}
-%   \centering
-%   \noindent
-%   \DedicatoriaTexto
-%   \vspace*{\fill}
-%\end{dedicatoria}
-%}{}
+\ifthenelse{\equal{\terDedicatoria}{Sim}}{
+\begin{dedicatoria}
+   \vspace*{\fill}
+   \begin{flushright}
+   \begin{minipage}{0.6\textwidth}
+   \OnehalfSpacing
+   \DedicatoriaTexto
+   \end{minipage}
+   \end{flushright}
+\end{dedicatoria}
+}{}
 
 % Agradecimentos
 % ----------------------------------------------------------
 
-% \ifthenelse{\equal{\terAgradecimentos}{Sim}}
-% {\begin{agradecimentos}
-%    \AgradecimentosTexto
-%  \end{agradecimentos}
-%  }{}
-% Epígrafe
+\ifthenelse{\equal{\terAgradecimentos}{Sim}}
+{\begin{agradecimentos}
+   \AgradecimentosTexto
+ \end{agradecimentos}
+ }{}
+% Epígrafe (desativada)
 % ----------------------------------------------------------
 
 %\ifthenelse{\equal{\terEpigrafe}{Sim}}{
