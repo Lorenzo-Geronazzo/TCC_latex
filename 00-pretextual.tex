@@ -141,14 +141,44 @@
 % inserir lista de símbolos
 % ----------------------------------------------------------
 
-% Desativadas: nenhuma sigla (\criarsigla) nem símbolo (\criarsimbolo) no texto;
-% as únicas eram de teste, na introdução do modelo. Para voltar, tirar os %.
-% \ifthenelse{\equal{\terSiglasAbrev}{Sim}}{
-%    \imprimirlistadesiglas
-%    \cleardoublepage
-%    \imprimirlistadesimbolos
-%    \cleardoublepage
-% }{}
+% Lista de siglas (não há lista de símbolos)
+\ifthenelse{\equal{\terSiglasAbrev}{Sim}}{
+\renewcommand{\listadesiglasname}{LISTA DE SIGLAS}
+\begin{siglas}
+  \item[BNDES] -- Banco Nacional de Desenvolvimento Econômico e Social
+  \item[Codace] -- Comitê de Datação de Ciclos Econômicos
+  \item[CPE] -- Ciclos político-econômicos
+  \item[CPF] -- Cadastro de Pessoas Físicas
+  \item[CPO] -- Ciclos político-orçamentários
+  \item[DCA] -- Declaração de Contas Anuais
+  \item[EUA] -- Estados Unidos da América
+  \item[Firjan] -- Federação das Indústrias do Estado do Rio de Janeiro
+  \item[FPM] -- Fundo de Participação dos Municípios
+  \item[Fundeb] -- Fundo de Manutenção e Desenvolvimento da Educação Básica e de Valorização dos Profissionais da Educação
+  \item[GMM] -- Generalized Method of Moments
+  \item[IBGE] -- Instituto Brasileiro de Geografia e Estatística
+  \item[ICMS] -- Imposto sobre Operações Relativas à Circulação de Mercadorias e sobre Prestações de Serviços de Transporte Interestadual e Intermunicipal e de Comunicação
+  \item[IGP-DI] -- Índice Geral de Preços -- Disponibilidade Interna
+  \item[IPCA] -- Índice Nacional de Preços ao Consumidor Amplo
+  \item[Ipea] -- Instituto de Pesquisa Econômica Aplicada
+  \item[IPTU] -- Imposto sobre a Propriedade Predial e Territorial Urbana
+  \item[ISS] -- Imposto sobre Serviços de Qualquer Natureza
+  \item[LRF] -- Lei de Responsabilidade Fiscal
+  \item[PDS] -- Partido Democrático Social
+  \item[PFL] -- Partido da Frente Liberal
+  \item[PIB] -- Produto Interno Bruto
+  \item[PMDB] -- Partido do Movimento Democrático Brasileiro
+  \item[PPB] -- Partido Progressista Brasileiro
+  \item[PTB] -- Partido Trabalhista Brasileiro
+  \item[RDD] -- Regression Discontinuity Design
+  \item[ROC] -- Resultado Orçamentário Corrente
+  \item[Siconfi] -- Sistema de Informações Contábeis e Fiscais do Setor Público Brasileiro
+  \item[SIDRA] -- Sistema IBGE de Recuperação Automática
+  \item[SOF] -- Secretaria de Orçamento Federal
+  \item[STN] -- Secretaria do Tesouro Nacional
+  \item[TSE] -- Tribunal Superior Eleitoral
+\end{siglas}
+}{}
 
 % inserir o sumario
 % ----------------------------------------------------------
