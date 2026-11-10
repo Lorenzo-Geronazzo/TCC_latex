@@ -21,11 +21,11 @@ A base tem uma observação por município-ano e reúne dados fiscais da Secreta
 \begin{tabular}{|>{\raggedright\arraybackslash}p{2.6cm}|>{\raggedright\arraybackslash}p{2.6cm}|>{\raggedright\arraybackslash}p{3.6cm}|>{\raggedright\arraybackslash}p{5.2cm}|}
 \hline
 \textbf{Dado} & \textbf{Fonte} & \textbf{Onde foi extraído} & \textbf{Tratamento aplicado} \\ \hline
-Despesa por função & STN, Siconfi (DCA, Anexo I-E) & Base dos Dados: \nolinkurl{br_me_siconfi.municipio_despesas_funcao} & Estágio ``despesas pagas''; exclusão das despesas intraorçamentárias; uso apenas das 28 funções; agregação em grupos; deflação; valores per capita; logaritmo nos modelos \\ \hline
-Receita tributária e transferências correntes & STN, Siconfi (DCA, receitas orçamentárias) & Base dos Dados: \nolinkurl{br_me_siconfi.municipio_receitas_orcamentarias} & Receitas brutas realizadas; contas 1.1.1 e 1.1.7; deflação; per capita; logaritmo nos modelos; valores negativos e Tocantins em 2024 tratados como ausentes \\ \hline
+Despesa por função & STN, Siconfi (DCA, Anexo I-E) & Base dos Dados: \nolinkurl{br_me_siconfi.municipio_despesas_funcao} & Estágio ``despesas pagas''; exclusão das despesas intraorçamentárias; uso apenas das 28 funções; agregação em grupos; deflação; valores \textit{per capita}; logaritmo nos modelos \\ \hline
+Receita tributária e transferências correntes & STN, Siconfi (DCA, receitas orçamentárias) & Base dos Dados: \nolinkurl{br_me_siconfi.municipio_receitas_orcamentarias} & Receitas brutas realizadas; contas 1.1.1 e 1.1.7; deflação; \textit{per capita}; logaritmo nos modelos; valores negativos e Tocantins em 2024 tratados como ausentes \\ \hline
 Prefeito eleito, partido e reeleição & TSE & Base dos Dados: \nolinkurl{br_tse_eleicoes} (resultados e candidatos), eleições de 2008 a 2024 & Um prefeito por município-ano (o que governou a maior parte do ano); eleições suplementares incorporadas; segundo mandato identificado por título de eleitor, CPF ou nome \\ \hline
 Governador, presidente e coligações & TSE & Base dos Dados: \nolinkurl{br_tse_eleicoes} (resultados e partidos); para 2010, arquivo de coligações do Portal de Dados Abertos do TSE & Apenas eleições ordinárias; padronização das siglas partidárias (mudanças de nome e fusões) \\ \hline
-População & IBGE, estimativas populacionais e Censo Demográfico 2022 & Base dos Dados: \nolinkurl{br_ibge_populacao.municipio} & Estimativas em 2013--2021 e 2024--2025; contagem do Censo em 2022; em 2023, valores próximos aos do Censo; denominador dos valores per capita; logaritmo como controle \\ \hline
+População & IBGE, estimativas populacionais e Censo Demográfico 2022 & Base dos Dados: \nolinkurl{br_ibge_populacao.municipio} & Estimativas em 2013--2021 e 2024--2025; contagem do Censo em 2022; em 2023, valores próximos aos do Censo; denominador dos valores \textit{per capita}; logaritmo como controle \\ \hline
 PIB nacional & IBGE, Contas Nacionais Trimestrais & SIDRA, tabela 1846 & Soma dos quatro trimestres; deflacionado; logaritmo como controle \\ \hline
 PIB municipal & IBGE, PIB dos Municípios & Base dos Dados: \nolinkurl{br_ibge_pib.municipio} & Disponível até 2023; deflacionado; usado apenas em teste de robustez \\ \hline
 IPCA & IBGE & SIDRA, tabela 1737 & Média anual do índice mensal; valores em R\$ de 2025 \\ \hline
@@ -98,8 +98,8 @@ Ano pré-eleitoral & 1 em 2015, 2019 e 2023 & Interesse: antecipação do ciclo 
 Pandemia (2020) & 1 em 2020 & Controle do choque da covid-19 \\ \hline
 Coalizão com o governador & 1 se o partido do prefeito integra a coligação do governador eleito & Interesse: alinhamento estadual \\ \hline
 Coalizão com o presidente & 1 se o partido do prefeito integra a coligação do presidente eleito & Interesse: alinhamento federal \\ \hline
-Receita tributária per capita & ln(1 + valor per capita) de impostos, taxas e contribuição de melhoria, R\$ de 2025 & Controle: arrecadação própria \\ \hline
-Transferências correntes per capita & ln(1 + valor per capita) das transferências correntes recebidas, R\$ de 2025 & Controle: recursos de outros entes \\ \hline
+Receita tributária \textit{per capita} & ln(1 + valor \textit{per capita}) de impostos, taxas e contribuição de melhoria, R\$ de 2025 & Controle: arrecadação própria \\ \hline
+Transferências correntes \textit{per capita} & ln(1 + valor \textit{per capita}) das transferências correntes recebidas, R\$ de 2025 & Controle: recursos de outros entes \\ \hline
 Proporção de jovens & População de 0 a 19 anos / população & Controle: demanda por educação \\ \hline
 Proporção de idosos & População de 65 anos ou mais / população & Controle: demanda por saúde e assistência \\ \hline
 Grau de urbanização & População urbana / população & Controle: perfil do município \\ \hline
@@ -128,8 +128,8 @@ A \autoref{tab:descritivas} apresenta as variáveis explicativas contínuas. O m
 \begin{tabular}{lrrrrr}
 \hline
 \textbf{Variável} & \textbf{N} & \textbf{Média} & \textbf{D. padrão} & \textbf{Mínimo} & \textbf{Máximo} \\ \hline
-Receita tributária per capita (R\$) & 70.989 & 491,47 & 583,94 & 0,00 & 13.955,59 \\
-Transferências correntes per capita (R\$) & 71.120 & 5.406,44 & 2.941,66 & 0,07 & 50.463,95 \\
+Receita tributária \textit{per capita} (R\$) & 70.989 & 491,47 & 583,94 & 0,00 & 13.955,59 \\
+Transferências correntes \textit{per capita} (R\$) & 71.120 & 5.406,44 & 2.941,66 & 0,07 & 50.463,95 \\
 Proporção de jovens (0--19 anos) & 71.196 & 0,295 & 0,054 & 0,086 & 0,617 \\
 Proporção de idosos (65 anos ou mais) & 71.196 & 0,112 & 0,033 & 0,015 & 0,301 \\
 Grau de urbanização & 71.196 & 0,676 & 0,206 & 0,060 & 1,000 \\
