@@ -45,8 +45,16 @@
 \usepackage{caption} 		
 %[format=plain]
 	%\renewcommand\caption[1]{%
-    \captionsetup{font=small}	% tamanho da fonte 10pt
+    \captionsetup{font=footnotesize}	% tamanho da fonte 10pt (\footnotesize com corpo de 12pt)
     %,format=hang
+    % Manual UFPR 2024 (seções 10 e 11): título em maiúsculas. O formato vale só para
+    % a legenda no corpo do texto; as listas usam o título original.
+    \DeclareCaptionTextFormat{maiusculas}{\MakeUppercase{#1}}
+    \captionsetup{textformat=maiusculas}
+    % Tabelas: título alinhado à margem esquerda da tabela
+    \captionsetup[table]{justification=justified,singlelinecheck=false}
+    % Figuras: título centralizado (quadros: ver depois do \DeclareFloatingEnvironment)
+    \captionsetup[figure]{justification=centering}
  	% \caption{#1}}
 	%\captionsetup{width=0.8\textwidth}
 
@@ -74,6 +82,26 @@ within= none, % numeracao continua
 %within=section, % numeracao reinicia em cada seccao
 %chapterlistsgaps=off
 ]{quadro}
+
+% Quadros: título centralizado (Manual UFPR 2024, seção 10)
+\captionsetup[quadro]{justification=centering}
+
+% FONTE e NOTA (Manual UFPR 2024, seções 10 e 11): rótulo em maiúsculas (\fontename e
+% \notaname, em UFPR.sty), texto em maiúsculas e minúsculas, 10 pt, alinhados à
+% esquerda. Substitui o \fonte do abntex2, que passa pelo \@makecaption e, por isso,
+% herdaria o título em maiúsculas. O \nota do abntex2 chama este \fonte.
+\makeatletter
+\renewcommand{\fonte}[2][\fontename]{%
+  \par
+  \begingroup
+    \@parboxrestore
+    \if@minipage\@setminipage\fi
+    \footnotesize
+    \settowidth{\@tempdima}{#1:~}%
+    \noindent\hangindent=\@tempdima\hangafter=1
+    #1:~\ignorespaces#2\par
+  \endgroup}
+\makeatother
 
 \newlistentry{quadro}{loq}{0}
 

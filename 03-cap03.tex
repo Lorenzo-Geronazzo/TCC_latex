@@ -31,7 +31,7 @@ PIB municipal & IBGE, PIB dos Municípios & Base dos Dados: \nolinkurl{br_ibge_p
 IPCA & IBGE & SIDRA, tabela 1737 & Média anual do índice mensal; valores em R\$ de 2025 \\ \hline
 Jovens, idosos e urbanização & IBGE, Censos de 2010 e 2022 & SIDRA, tabelas 200 e 202 (2010) e 9514 e 9923 (2022) & Proporções da população de 0 a 19 anos, de 65 anos ou mais e urbana; interpolação linear entre 2010 e 2022; valor de 2022 mantido em 2023--2025 \\ \hline
 \end{tabular}
-\fonte{Elaboração própria.}
+\fonte{O autor (2026).}
 \end{quadro}
 
 Entre esses dados, as despesas vêm da Declaração de Contas Anuais (DCA), que os municípios enviam ao Siconfi, no estágio de despesas pagas. Elas estão organizadas pela classificação funcional da despesa, instituída pela Portaria nº 42, de 14 de abril de 1999, do Ministério do Orçamento e Gestão \parencite{portaria42_1999} e obrigatória para União, estados e municípios.
@@ -65,7 +65,6 @@ As variáveis dependentes são a despesa total e oito grupos de funções, em re
 
 \begin{table}[htbp]
 \caption{Variáveis dependentes}\label{tab:dependentes}
-\centering
 \small
 \begin{tabular}{lll}
 \hline
@@ -80,7 +79,7 @@ Administração & Administração & 3.04.000 \\
 Agricultura & Agricultura & 3.20.000 \\
 Comunicações & Comunicações & 3.24.000 \\ \hline
 \end{tabular}
-\fonte{Elaboração própria, com base em \textcite{sakurai2009}.}
+\fonte{Adaptada de \textcite{sakurai2009}.}
 \nota{Despesas pagas \textit{per capita}, em R\$ de 2025; nos modelos, em logaritmo. \texttt{id\_conta\_bd} é o código da conta na Base dos Dados; os dois dígitos do meio correspondem ao código da função na Portaria nº 42/1999 \parencite{portaria42_1999}.}
 \end{table}
 
@@ -107,7 +106,7 @@ População (log) & Logaritmo da população & Controle: escala \\ \hline
 PIB nacional (log) & Logaritmo do PIB real do Brasil, R\$ de 2025 & Controle: ciclo econômico \\ \hline
 Tendência e tendência ao quadrado & Contador de anos (1 em 2013, 2 em 2014, \ldots, 13 em 2025) e o seu quadrado & Controle: evolução do gasto no tempo \\ \hline
 \end{tabular}
-\fonte{Elaboração própria.}
+\fonte{O autor (2026).}
 \nota{As variáveis dependentes entram em ln(1 + valor \textit{per capita}, R\$ de 2025).}
 \end{quadro}
 
@@ -122,7 +121,6 @@ A \autoref{tab:descritivas} apresenta as variáveis explicativas contínuas. O m
 
 \begin{table}[htbp]
 \caption{Estatísticas descritivas das variáveis explicativas contínuas (2013--2025)}\label{tab:descritivas}
-\centering
 \footnotesize
 \setlength{\tabcolsep}{4pt}
 \begin{tabular}{lrrrrr}
@@ -136,7 +134,7 @@ Grau de urbanização & 71.196 & 0,676 & 0,206 & 0,060 & 1,000 \\
 População (log) & 71.240 & 9,467 & 1,179 & 6,648 & 16,333 \\
 PIB nacional (R\$ trilhões) & 71.241 & 10,909 & 0,943 & 9,766 & 12,739 \\ \hline
 \end{tabular}
-\fonte{Elaboração própria com dados do Siconfi e do IBGE.}
+\fonte{O autor (2026), com base em dados do Siconfi e do IBGE.}
 \nota{Valores em R\$ de 2025, base após a limpeza descrita na \autoref{sec:dados}.}
 \end{table}
 
@@ -153,7 +151,6 @@ A \autoref{tab:desc_dependentes} resume as variáveis dependentes: Educação e 
 
 \begin{table}[htbp]
 \caption{Estatísticas descritivas das variáveis dependentes (R\$ de 2025 \textit{per capita})}\label{tab:desc_dependentes}
-\centering
 \footnotesize
 \setlength{\tabcolsep}{4pt}
 \begin{tabular}{lrrrrr}
@@ -169,7 +166,7 @@ Assistência Social & 71.026 & 215,69 & 166,58 & 0,06 & 2.793,88 \\
 Agricultura & 64.967 & 131,95 & 224,45 & 0,00 & 4.039,04 \\
 Comunicações & 12.456 & 9,20 & 19,82 & 0,00 & 945,35 \\ \hline
 \end{tabular}
-\fonte{Elaboração própria com dados do Siconfi e do IBGE.}
+\fonte{O autor (2026), com base em dados do Siconfi e do IBGE.}
 \nota{Valores negativos registrados no Siconfi (sete município-anos) foram tratados como ausentes, como nos modelos, em que a despesa entra em logaritmo; os valores iguais a zero foram mantidos.}
 \end{table}
 
@@ -179,7 +176,7 @@ Além dos níveis resumidos nas tabelas, interessa a evolução das despesas no 
 \caption{Despesa total \textit{per capita}, média do logaritmo}\label{fig:total}
 \centering
 \includegraphics[width=0.9\textwidth]{fig/metodologia/serie_despesa_total_log.png}
-\fonte{Elaboração própria com dados do Siconfi e do IBGE.}
+\fonte{O autor (2026), com base em dados do Siconfi e do IBGE.}
 \nota{Média simples, entre os municípios que informaram a despesa no ano, do logaritmo da despesa \textit{per capita}, em reais de 2025. Faixas em laranja: anos eleitorais (2016, 2020 e 2024); em amarelo: anos pré-eleitorais (2015, 2019 e 2023).}
 \end{figure}
 
@@ -187,7 +184,7 @@ Além dos níveis resumidos nas tabelas, interessa a evolução das despesas no 
 \caption{Receita tributária e transferências correntes \textit{per capita}, média do logaritmo}\label{fig:receitas}
 \centering
 \includegraphics[width=\textwidth]{fig/metodologia/receitas_painel.png}
-\fonte{Elaboração própria com dados do Siconfi e do IBGE.}
+\fonte{O autor (2026), com base em dados do Siconfi e do IBGE.}
 \nota{Média simples, entre os municípios que informaram a receita no ano, do logaritmo da receita \textit{per capita}, em reais de 2025, na base após a limpeza descrita na \autoref{sec:dados}. Escalas diferentes em cada painel. Faixas como na \autoref{fig:total}.}
 \end{figure}
 
@@ -195,7 +192,7 @@ Além dos níveis resumidos nas tabelas, interessa a evolução das despesas no 
 \caption{Despesa \textit{per capita} em Habitação e Urbanismo, Transporte, Saúde e Saneamento e Assistência Social, média do logaritmo}\label{fig:grupos1}
 \centering
 \includegraphics[width=\textwidth]{fig/metodologia/grupos_painel_1.png}
-\fonte{Elaboração própria com dados do Siconfi e do IBGE.}
+\fonte{O autor (2026), com base em dados do Siconfi e do IBGE.}
 \nota{Média simples, entre os municípios que informaram a despesa no ano, do logaritmo da despesa \textit{per capita}, em reais de 2025. Escalas diferentes em cada painel. Faixas como na \autoref{fig:total}.}
 \end{figure}
 
@@ -203,7 +200,7 @@ Além dos níveis resumidos nas tabelas, interessa a evolução das despesas no 
 \caption{Despesa \textit{per capita} em Educação e Cultura, Administração, Agricultura e Comunicações, média do logaritmo}\label{fig:grupos2}
 \centering
 \includegraphics[width=\textwidth]{fig/metodologia/grupos_painel_2.png}
-\fonte{Elaboração própria com dados do Siconfi e do IBGE.}
+\fonte{O autor (2026), com base em dados do Siconfi e do IBGE.}
 \nota{Média simples, entre os municípios que informaram a despesa no ano, do logaritmo da despesa \textit{per capita}, em reais de 2025. Escalas diferentes em cada painel. Faixas como na \autoref{fig:total}.}
 \end{figure}
 
@@ -282,7 +279,6 @@ O primeiro passo é a escolha do estimador. Em todas as nove variáveis, o teste
 
 \begin{table}[htbp]
 \caption{Teste de Hausman: efeitos fixos contra efeitos aleatórios}\label{tab:hausman}
-\centering
 \footnotesize
 \setlength{\tabcolsep}{4pt}
 \begin{tabular}{lrrrr}
@@ -298,7 +294,7 @@ Administração & 2.618,88 & 671,99 & 70.553 & 5.568 \\
 Agricultura & 130,36 & 229,48 & 64.464 & 5.436 \\
 Comunicações & 542,95 & 178,34 & 12.360 & 1.896 \\ \hline
 \end{tabular}
-\fonte{Elaboração própria.}
+\fonte{O autor (2026).}
 \nota{Especificação do modelo A, em logaritmo. Em todos os casos, p-valor $<$ 0,001 nas duas versões; hipótese nula: o estimador de efeitos aleatórios é consistente. Versão robusta: teste de \textcite{mundlak1978} com erros-padrão agrupados por município.}
 \end{table}
 
