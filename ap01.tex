@@ -7,7 +7,7 @@
 
 \chapter{Testes de robustez}\label{ap:robustez}
 
-O \autoref{qua:robustez} lista todos os testes de robustez estimados. Cada um muda uma decisão em relação aos modelos principais, em logaritmo; os testes R5, R7, R10 e R11 mudam mais de um elemento, como indicado. Os testes comentados com mais detalhe no texto principal são R3, R5, R12, R14 e R16. As seções a seguir comentam os testes por tema, e as tabelas vêm depois, em sequência, na ordem do quadro; a tabela do R16 está no capítulo de Resultados (\autoref{tab:robustez_R16}, na \autoref{sec:res_por_eleicao}).
+O \autoref{qua:robustez} lista todos os testes de robustez estimados. Cada um muda uma decisão em relação aos modelos principais, em logaritmo; os testes R5, R7, R10 e R11 mudam mais de um elemento, como indicado. Os testes comentados com mais detalhe no texto principal são R3, R5, R12, R14 e R16. As seções a seguir comentam os testes por tema, e as tabelas vêm depois, em sequência, na ordem do quadro; as tabelas do R16 e do R4 estão no capítulo de Resultados (\autoref{tab:robustez_R16} e \autoref{tab:robustez_R4}, na \autoref{sec:res_por_eleicao}).
 
 \begin{quadro}[htbp]
 \caption{Testes de robustez}\label{qua:robustez}
@@ -51,7 +51,7 @@ Os três testes levam ao mesmo resultado. Nos três, todos os coeficientes de in
 
 Os testes seguintes mudam a forma ou a composição das variáveis dependentes. O teste R3 (\autoref{tab:robustez_R3}) reestima os modelos em nível, com a despesa, as receitas e o PIB em reais, para avaliar a forma funcional; como a unidade é outra, a comparação com o modelo principal se limita a sinal e significância. O teste está comentado na \autoref{sec:res_robustez} e na \autoref{sec:res_coalizoes}. O ano eleitoral na despesa total, em Habitação e Urbanismo, em Transporte e em Saúde e Saneamento mantém sinal e significância, assim como o alinhamento com o governador na despesa total e em Administração; o alinhamento com o presidente na despesa total continua não significativo, e o ano pré-eleitoral na despesa total passa a significativo. Já outros coeficientes de grupo dos dois alinhamentos mudam de significância ou de sinal, e Comunicações muda de sinal no ano eleitoral, o que indica que esses coeficientes dependem da forma funcional.
 
-Enquanto o R3 mede os efeitos em reais, o teste R4 (\autoref{tab:robustez_R4}) usa a participação de cada grupo na despesa total, para avaliar a recomposição do gasto; a comparação também se limita a sinal e significância. Os movimentos de Habitação e Urbanismo, Transporte, Administração e Educação e Cultura no ano eleitoral estão na \autoref{sec:res_por_eleicao}. Além deles, Assistência Social também ganha participação no ano eleitoral, e Saúde e Saneamento e Agricultura não têm variação significativa; no ano pré-eleitoral, ganham participação Educação e Cultura, Habitação e Urbanismo e Assistência Social, e perdem Saúde e Saneamento e Administração. No modelo B, o alinhamento com o governador está associado a menor participação de Saúde e Saneamento e de Educação e Cultura, e o alinhamento com o presidente não tem coeficiente significativo em nenhum grupo. Uma perda de participação não implica queda do gasto: em Educação e Cultura, o coeficiente do ano eleitoral em logaritmo é positivo e, em participação, negativo.
+Enquanto o R3 mede os efeitos em reais, o teste R4 (\autoref{tab:robustez_R4}, na \autoref{sec:res_por_eleicao}) usa a participação de cada grupo na despesa total, para avaliar a recomposição do gasto; a comparação também se limita a sinal e significância. Os movimentos de Habitação e Urbanismo, Transporte, Administração e Educação e Cultura no ano eleitoral estão na \autoref{sec:res_por_eleicao}. Além deles, Assistência Social também ganha participação no ano eleitoral, e Saúde e Saneamento e Agricultura não têm variação significativa; no ano pré-eleitoral, ganham participação Educação e Cultura, Habitação e Urbanismo e Assistência Social, e perdem Saúde e Saneamento e Administração. No modelo B, o alinhamento com o governador está associado a menor participação de Saúde e Saneamento e de Educação e Cultura, e o alinhamento com o presidente não tem coeficiente significativo em nenhum grupo. Uma perda de participação não implica queda do gasto: em Educação e Cultura, o coeficiente do ano eleitoral em logaritmo é positivo e, em participação, negativo.
 
 Os dois testes restantes mudam a composição de alguns grupos ou os municípios que entram neles. O teste R8 (\autoref{tab:robustez_R8}) soma Assistência Social e Previdência, o agrupamento de \textcite{sakurai2009}, para avaliar a separação da Previdência. O ano eleitoral é positivo e significativo, como na Assistência Social isolada (\autoref{sec:res_ciclo}); o ano pré-eleitoral não é significativo, e os alinhamentos com o governador, positivo, e com o presidente, negativo, passam a significativos. Como a variável é outra, a comparação é apenas indicativa. O teste R9 (\autoref{tab:robustez_R9}) reestima Transporte, Agricultura e Comunicações só com os municípios que informam a função em todos os anos em que aparecem, para avaliar o registro irregular dessas funções. No ano eleitoral, Transporte e Agricultura mantêm sinal e significância, e Comunicações deixa de ser significativa; no ano pré-eleitoral, as três mantêm sinal e significância. O alinhamento com o governador passa a significativo em Transporte e em Agricultura, e o alinhamento com o presidente em Transporte continua significativo, mas com efeito menor, de cerca de 3\%, contra 4,3\% no modelo principal. O teste indica que o registro irregular não altera o ciclo eleitoral nessas duas funções, mas sugere que o alinhamento é sensível à amostra.
 
@@ -82,13 +82,13 @@ Os dois últimos testes tratam do ano eleitoral. O teste R14 (\autoref{tab:robus
 % ------------------------------------------------------------------------------
 % Tabelas de cada teste (o título do teste está na legenda). Geradas por
 % ../Modelagem/regressao/06_tabelas_latex.R (copiadas para tabelas/resultados/).
-% A do R16 fica só no capítulo de Resultados (rótulo tab:robustez_R16).
+% As do R16 e do R4 ficam só no capítulo de Resultados (rótulos tab:robustez_R16 e
+% tab:robustez_R4).
 % ------------------------------------------------------------------------------
 
 \input{tabelas/resultados/robustez_R1}
 \input{tabelas/resultados/robustez_R2}
 \input{tabelas/resultados/robustez_R3}
-\input{tabelas/resultados/robustez_R4}
 \input{tabelas/resultados/robustez_R5}
 \input{tabelas/resultados/robustez_R6}
 \input{tabelas/resultados/robustez_R7}
