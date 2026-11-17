@@ -223,11 +223,9 @@ Em conjunto, a leitura gráfica sugere um ciclo eleitoral concentrado em algumas
 
 Dados em painel acompanham as mesmas unidades de corte transversal, aqui os municípios, ao longo de vários períodos. A principal vantagem sobre um único corte transversal é permitir controlar características não observadas que não mudam no tempo \parencite[p.~247--249]{wooldridge2002}. Se essas características forem correlacionadas com as variáveis explicativas e ficarem no termo de erro, o estimador de mínimos quadrados ordinários é viesado e inconsistente; com observações repetidas da mesma unidade, é possível eliminá-las.
 
-No caso dos municípios, características como a cultura política local, a qualidade da gestão, a localização e a estrutura produtiva afetam o gasto e provavelmente se relacionam com o alinhamento político do prefeito e com as receitas.
-
 A escolha por dados em painel decorre da própria natureza da pergunta de pesquisa. O interesse não está apenas em verificar se municípios que gastam mais apresentam determinadas características políticas, mas em investigar se o comportamento fiscal dos municípios se modifica em função dos incentivos eleitorais.
 
-Para isso, é preciso acompanhar os mesmos municípios ao longo do tempo. Essa estrutura permite utilizar efeitos fixos, comparando cada município consigo mesmo e controlando características estruturais não observadas que não mudam ao longo do período, como localização, estrutura produtiva e aspectos históricos da capacidade administrativa.
+Para isso, é preciso acompanhar os mesmos municípios ao longo do tempo. Essa estrutura permite utilizar efeitos fixos, comparando cada município consigo mesmo e controlando características que não mudam ao longo do período, como a localização, a estrutura produtiva, a cultura política local e aspectos históricos da capacidade administrativa. Essas características afetam o gasto e provavelmente se relacionam com o alinhamento político do prefeito e com as receitas.
 
 Essa estratégia é especialmente importante no Brasil, onde existe uma enorme heterogeneidade entre os governos municipais. Sem esse controle, seria possível atribuir ao calendário eleitoral diferenças de gastos que, na verdade, refletem diferenças estruturais entre os municípios.
 
@@ -239,7 +237,7 @@ Ademais, os resultados devem ser interpretados com cuidado. O painel com efeitos
 
 A amostra tem $N = 5.568$ municípios e $T = 13$ anos. Como $N$ é muito maior que $T$, vale a análise assintótica com $N$ grande e $T$ fixo adotada por \textcite[p.~250--251]{wooldridge2002}. O painel é desbalanceado, porque nem todos os municípios têm dados em todos os anos.
 
-Essa heterogeneidade é representada pelo modelo de efeitos não observados. O modelo básico \parencite[p.~251]{wooldridge2002} é
+A heterogeneidade entre municípios é representada pelo modelo de efeitos não observados. O modelo básico \parencite[p.~251]{wooldridge2002} é
 \begin{equation}\label{eq:uem}
 y_{it} = \mathbf{x}_{it}\boldsymbol{\beta} + c_i + u_{it}, \qquad t = 1, \dots, T,
 \end{equation}
