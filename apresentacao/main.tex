@@ -7,7 +7,7 @@
 \usepackage{booktabs}
 \usepackage{graphicx}
 \usepackage{amsmath}
-\graphicspath{{../fig/metodologia/}} % figuras da monografia, sem cópia
+\graphicspath{{../fig/metodologia/}{figuras/}} % figuras da monografia, sem cópia, e figuras só dos slides
 
 \usetheme{Madrid}
 \usecolortheme{default}
@@ -153,11 +153,30 @@
 \note{(2 min) Driscoll-Kraay: ``protege contra choques nacionais comuns a todos os municípios''. Sem efeito fixo de ano, o alinhamento com o presidente se confunde com o período (0,9\% sem ele, nulo com ele).}
 
 %--------------------------------------------------
+% EVIDÊNCIA DESCRITIVA: DESPESA TOTAL (0,5 min)
+%--------------------------------------------------
+\begin{frame}{Evidência descritiva: despesa total}
+  \begin{center}
+    \includegraphics[width=\textwidth,height=0.75\textheight,keepaspectratio]{figuras/serie_despesa_total_slides.png}
+  \end{center}
+  \vspace{0.5em}
+  \small Na despesa total, a tendência de alta domina, e os anos eleitorais quase não se destacam.
+\end{frame}
+\note{(0,5 min) Mostre que o total cresce de forma contínua. O contraste com o próximo slide é o ponto: o ciclo aparece nos itens visíveis.}
+
+%--------------------------------------------------
 % 7. EVIDÊNCIA DESCRITIVA (1 min)
 %--------------------------------------------------
-\begin{frame}{Evidência descritiva: o ``dente de serra''}
+\begin{frame}{Evidência descritiva: Habitação e Urbanismo e Transporte}
   \begin{center}
-    \includegraphics[width=0.85\textwidth,height=0.76\textheight,keepaspectratio]{grupos_painel_1.png}
+    \includegraphics[width=\textwidth,height=0.80\textheight,keepaspectratio]{grupos_slides_A.png}
+  \end{center}
+\end{frame}
+\note{(0,5 min) Os dois maiores efeitos do trabalho. Mostre os picos nos anos eleitorais (faixas vermelhas).}
+
+\begin{frame}{Evidência descritiva: Saúde e Saneamento e Assistência Social}
+  \begin{center}
+    \includegraphics[width=\textwidth,height=0.75\textheight,keepaspectratio]{grupos_slides_B.png}
   \end{center}
   \vspace{0.5em}
   \small O gráfico \alert{sugere}, mas não separa a eleição de outros choques (pandemia em 2020; aumento das receitas a partir de 2022).
@@ -176,6 +195,7 @@
       Habitação e Urbanismo & $+27\%$   & sólido \\
       Transporte            & $+19{,}5\%$ & sólido (cautela na magnitude) \\
       Saúde e Saneamento    & $+4{,}2\%$  & sólido \\
+      Assistência Social & $+7\%$ & só em 2024 \\
       Administração         & n.s.      & sem efeito \\
       \midrule
       \textbf{Despesa total} & {\boldmath$\approx +5\%$} & ver Resultado 2 \\
@@ -236,14 +256,15 @@
 % 11. RESULTADO 4 (1,5 min)
 %--------------------------------------------------
 \begin{frame}{Resultado 4: alinhamento político}
-  \begin{columns}[T]
-    \begin{column}{0.5\textwidth}
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.48\textwidth}
       \begin{block}{Governador}
         Despesa total \alert{$\approx +0{,}4\%$}: efeito pequeno, mas estável em todos os testes.\\[0.5em]
         Administração: $\approx +0{,}7\%$.
       \end{block}
     \end{column}
-    \begin{column}{0.5\textwidth}
+    \hfill
+    \begin{column}{0.48\textwidth}
       \begin{block}{Presidente}
         \alert{Sem efeito} na despesa total (amostra completa).\\[0.5em]
         Medida com erro: só 1,2\% dos prefeitos aparecem alinhados em 2019--22.
