@@ -17,6 +17,9 @@
 *.ilg
 *.sbl
 *.sig
+*.nav
+*.snm
+*.vrb
 
 # Arquivos de editores e sistema
 .vscode/
