@@ -7,6 +7,7 @@
 \usepackage{booktabs}
 \usepackage{graphicx}
 \usepackage{amsmath}
+\usepackage{appendixnumberbeamer}
 \graphicspath{{../fig/metodologia/}{figuras/}} % figuras da monografia, sem cópia, e figuras só dos slides
 
 \usetheme{Madrid}
@@ -16,9 +17,9 @@
  
 
 \title[Eleições e finanças municipais]{O Efeito das Eleições nas Finanças Municipais:\\Evidências Empíricas para os Municípios Brasileiros}
-\author{Lorenzo Rodrigues Geronazzo}
+\author[Lorenzo Rodrigues Geronazzo]{Lorenzo Rodrigues Geronazzo\texorpdfstring{\\[0.4em]}{, }{\small Orientador: Prof.~Dr.~Victor Rodrigues de Oliveira}}
 \institute{Universidade Federal do Paraná\\Curso de Ciências Econômicas}
-\date{2026}
+\date{25 de novembro de 2026}
 
 \begin{document}
 
@@ -188,53 +189,33 @@
 %--------------------------------------------------
 \begin{frame}{Resultado 1: o ciclo se concentra no que é visível}
   \begin{center}
-    \begin{tabular}{lcc}
+    \begin{tabular}{lcccl}
       \toprule
-      \textbf{Função (ano eleitoral)} & \textbf{Efeito} & \textbf{Leitura}\\
+      \textbf{Função (ano eleitoral)} & \textbf{Média} & \textbf{2016} & \textbf{2024} & \textbf{Leitura}\\
       \midrule
-      Habitação e Urbanismo & $+27\%$   & sólido \\
-      Transporte            & $+19{,}5\%$ & sólido (cautela na magnitude) \\
-      Saúde e Saneamento    & $+4{,}2\%$  & sólido \\
-      Assistência Social & $+7\%$ & só em 2024 \\
-      Administração         & n.s.      & sem efeito \\
+      Habitação e Urbanismo & $+27\%$     & $+24\%$     & $+28{,}7\%$ & sólido \\
+      Transporte            & $+19{,}5\%$ & $+21{,}2\%$ & $+17{,}6\%$ & sólido (cautela na magnitude) \\
+      Saúde e Saneamento    & $+4{,}2\%$  & $+4{,}2\%$  & $+4\%$      & sólido \\
+      Assistência Social    & $+7\%$      & n.s.        & $+9{,}1\%$  & só em 2024 \\
+      Administração         & n.s.        & n.s.        & $+2{,}2\%$  & só em 2024 \\
       \midrule
-      \textbf{Despesa total} & {\boldmath$\approx +5\%$} & ver Resultado 2 \\
+      \textbf{Despesa total} & {\boldmath$+5{,}3\%$} & $+3{,}3\%$ & $+6{,}7\%$ & 2016 sensível à especificação \\
       \bottomrule
     \end{tabular}
   \end{center}
-  \vspace{0.5em}
-  \small Modelo A, 2016 e 2024; despesa per capita em logaritmo. n.s.: não significativo.
-\end{frame}
-\note{(2 min) É o slide principal. ``Sólido'' = significativo com os dois erros-padrão, nas duas eleições e nas duas formas funcionais (log e nível).}
-
-%--------------------------------------------------
-% 9. RESULTADO 2 (1,5 min)
-%--------------------------------------------------
-\begin{frame}{Resultado 2: duas eleições, uma história}
-  \begin{center}
-    \begin{tabular}{lcc}
-      \toprule
-       & \textbf{2016} & \textbf{2024} \\
-      \midrule
-      Habitação e Urbanismo & $+24\%$     & $+28{,}7\%$ \\
-      Transporte            & $+21{,}2\%$ & $+17{,}6\%$ \\
-      Saúde e Saneamento    & $+4{,}2\%$  & $+4\%$ \\
-      \midrule
-      Despesa total         & $+3{,}3\%$  & $+6{,}7\%$ \\
-      \bottomrule
-    \end{tabular}
-  \end{center}
+  \vspace{0.3em}
   \begin{itemize}
-    \item Os três aumentos \alert{não dependem de uma só eleição}.
     \item Em 2024 quase tudo sobe, inclusive Administração: boom de receitas ou estratégia eleitoral? O desenho não separa as duas.
   \end{itemize}
+  \vfill
+  {\scriptsize Modelo A; despesa per capita em logaritmo. Média: 2016 e 2024 (2020 absorvido pela \textit{dummy} de pandemia). n.s.: não significativo.}
 \end{frame}
-\note{(1,5 min) Mencione que, com a amostra até 2023, o efeito de 2016 sobre a despesa total perde significância na especificação principal (R7a).}
+\note{(2 min) É o slide principal. ``Sólido'' = significativo com os dois erros-padrão, nas duas eleições e nas duas formas funcionais (log e nível). Com a amostra até 2023, o efeito de 2016 sobre a despesa total perde significância na especificação principal (R7a).}
 
 %--------------------------------------------------
 % 10. RESULTADO 3 (1 min)
 %--------------------------------------------------
-\begin{frame}{Resultado 3: recomposição das participações}
+\begin{frame}{Resultado 2: recomposição das participações}
   \begin{center}
     \begin{tabular}{lc}
       \toprule
@@ -255,7 +236,7 @@
 %--------------------------------------------------
 % 11. RESULTADO 4 (1,5 min)
 %--------------------------------------------------
-\begin{frame}{Resultado 4: alinhamento político}
+\begin{frame}{Resultado 3: alinhamento político}
   \begin{columns}[T,onlytextwidth]
     \begin{column}{0.48\textwidth}
       \begin{block}{Governador}
@@ -330,7 +311,7 @@
 %--------------------------------------------------
 % OBRIGADO
 %--------------------------------------------------
-\begin{frame}[plain]
+\begin{frame}[plain,noframenumbering]
   \vfill
   \begin{center}
     {\Huge Obrigado!}\\[1em]
